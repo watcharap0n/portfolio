@@ -1,0 +1,7 @@
+{
+  "name": "portfolio-app",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix frontend"
+  }
+}
