@@ -235,12 +235,36 @@ export default {
       let v = this.$refs.form.validate()
       if (v) {
         console.log(v)
-        this.$swal.fire(
-            'Good job!',
-            'You clicked the button!',
-            'success'
-        )
+        let data = {
+          name: this.name,
+          company: this.company,
+          email: this.email,
+          tel: this.tel,
+          other: this.other
+        }
+        this.apiLINE(data)
       }
+    },
+    apiLINE(data) {
+      const path = 'https://smart-home-wera.herokuapp.com/callback/portfolio/contact'
+      this.$axios.post(path, data)
+          .then((res) => {
+            this.$swal.fire(
+                'Thank you.',
+                'I will contact you back.',
+                'success'
+            )
+            this.$refs.form.reset()
+            .catch((err)=>{
+              this.$swal.fire(
+                  'Something is wrong!',
+                  'Please Contact Tel: 094-149-9661',
+                  'error'
+              )
+              console.error(err)
+              this.$refs.form.reset()
+            })
+          })
     }
   }
 }
