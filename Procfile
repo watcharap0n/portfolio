@@ -1,1 +1,1 @@
-web: nuxt start --prefix server
+web: nuxt start

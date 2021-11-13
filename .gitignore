@@ -1,5 +1,4 @@
-frontend/node_modules
-frontend/yarn.lock
-frontend/.nuxt
-frontend/.idea
+node_modules
+yarn.lock
+.nuxt
 .idea
