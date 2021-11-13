@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app style="font-family: 'Ubuntu', sans-serif;">
-      <v-card  flat>
+      <v-card flat class="overflow-hidden">
         <v-app-bar
             absolute
             color="white"
@@ -9,7 +9,7 @@
             scroll-target="#scrolling-techniques-7"
         >
 
-          <div>
+          <v-app-bar-title>
             <v-icon
                 color="primary"
             >
@@ -24,7 +24,7 @@
             </strong>
             <br>
             <small>Development</small>
-          </div>
+          </v-app-bar-title>
 
           <v-spacer></v-spacer>
 
@@ -65,7 +65,7 @@ export default {
   components: {Footer, Index},
   data: () => ({
     scrollId: '',
-    navBars: ['Home', 'About', 'Portfolio', 'Contact']
+    navBars: ['Home', 'About', 'Portfolio']
   }),
   methods: {
     scrollNav(val) {

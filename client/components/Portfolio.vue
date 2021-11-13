@@ -1,8 +1,7 @@
 <template>
   <v-container>
-    <br><br>
     <v-row>
-      <v-col cols="6">
+      <v-col sm="6">
         <h2 style="margin-bottom: 20px">
           <v-icon color="primary">mdi-emoticon-cool</v-icon>
           <strong>Contact Me</strong></h2>
@@ -74,7 +73,7 @@
         </v-card>
 
       </v-col>
-      <v-col cols="6">
+      <v-col sm="6">
         <h2 style="margin-bottom: 20px">
           <v-icon color="primary">mdi-emoticon-cool</v-icon>
           <strong>PortFolio</strong></h2>

@@ -2,23 +2,31 @@
 
   <div>
 
-    <div ref="Home" class="home-profile">
-      <br><br><br><br>
-      <Home/>
+    <div ref="Home">
+      <v-card color="#deebff" flat class="overflow-auto">
+        <br><br><br><br>
+        <Home/>
+      </v-card>
     </div>
 
     <div ref="About">
-      <About/>
+      <v-card flat class="overflow-auto">
+        <About/>
+        <br><br><br>
+      </v-card>
     </div>
 
 
-    <div ref="Portfolio" class="port-profile">
-      <Portfolio/>
+    <div ref="Portfolio">
+      <v-card color="#deebff" flat class="overflow-auto">
+        <Portfolio/>
+        <br><br><br>
+      </v-card>
     </div>
 
-<!--    <div ref="Contact">-->
-<!--      <Contact/>-->
-<!--    </div>-->
+    <!--    <div ref="Contact">-->
+    <!--      <Contact/>-->
+    <!--    </div>-->
 
   </div>
 
@@ -38,6 +46,7 @@ export default {
   },
   watch: {
     scrollId(val) {
+      console.log(val)
       let element = this.$refs[val];
       console.log(element)
       let top = element.offsetTop;
@@ -49,7 +58,7 @@ export default {
 
 <style scoped>
 
-.port-profile{
+.port-profile {
   height: 800px;
   background: #deebff;
 }

@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="6">
+      <v-col sm="6">
         <br><br>
 
         <h2 style="margin-bottom: 20px">
@@ -26,7 +26,7 @@
         </div>
 
       </v-col>
-      <v-col cols="6">
+      <v-col sm="6">
         <br><br>
         <h2><v-icon color="primary">mdi-palette</v-icon><strong>About Me</strong></h2>
         <div>

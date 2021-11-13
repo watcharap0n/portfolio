@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="6">
+      <v-col sm="6">
         <br><br>
         <h2><strong>Watcharapon Weeraborirak </strong></h2>
         <div style="color: grey; font-family: 'Roboto Condensed', sans-serif;">A I &nbsp; D E V E L O P E R &nbsp; A N D
@@ -17,7 +17,7 @@
           <v-icon>mdi-download</v-icon>
           Download Resume
         </v-btn>
-        <v-container>
+        <div>
           <v-btn
               v-for="(v,k) in profiles"
               :key="k"
@@ -29,12 +29,12 @@
           >
             <v-icon color="primary" size="24px">{{ v.icon }}</v-icon>
           </v-btn>
-        </v-container>
+        </div>
       </v-col>
 
-      <v-col cols="6">
+      <v-col  sm="6">
 
-        <v-img id="image-profile" :src="require(`~/assets/images/Picture1.png`)" height="480"></v-img>
+        <v-img id="image-profile" :src="require(`~/assets/images/Picture1.png`)" height="480" class="mx-16"></v-img>
 
       </v-col>
     </v-row>
