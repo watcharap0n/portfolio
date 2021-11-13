@@ -64,6 +64,7 @@
                   :disabled="!valid"
                   color="primary"
                   class="mr-4"
+                  :loading="spin"
                   @click="initSubmit"
               >
                 Submit
@@ -149,6 +150,7 @@
 export default {
   data() {
     return {
+      spin: false,
       valid: true,
       name: '',
       company: '',
@@ -234,7 +236,7 @@ export default {
     initSubmit() {
       let v = this.$refs.form.validate()
       if (v) {
-        console.log(v)
+        this.spin = true
         let data = {
           name: this.name,
           company: this.company,
@@ -254,6 +256,7 @@ export default {
                 'I will contact you back.',
                 'success'
             )
+            this.spin = false
             this.$refs.form.reset()
             .catch((err)=>{
               this.$swal.fire(
@@ -261,6 +264,7 @@ export default {
                   'Please Contact Tel: 094-149-9661',
                   'error'
               )
+              this.spin = false
               console.error(err)
               this.$refs.form.reset()
             })
