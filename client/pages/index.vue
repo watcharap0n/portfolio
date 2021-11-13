@@ -3,7 +3,7 @@
   <div>
 
     <div ref="Home">
-      <v-card color="#deebff" flat class="overflow-auto">
+      <v-card color="#deebff" flat class="overflow-hidden">
         <br><br><br><br>
         <Home/>
       </v-card>

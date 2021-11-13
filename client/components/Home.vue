@@ -31,10 +31,8 @@
           </v-btn>
         </div>
       </v-col>
-
       <v-col  sm="6">
-
-        <v-img id="image-profile" :src="require(`~/assets/images/Picture1.png`)" height="480" class="mx-16"></v-img>
+        <v-img style="margin-top: -50px" id="image-profile" :src="require(`~/assets/images/Picture1.png`)"  max-height="480" max-width="440" class="mx-16"></v-img>
 
       </v-col>
     </v-row>
