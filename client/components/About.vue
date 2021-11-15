@@ -46,7 +46,7 @@
           <div style="color: grey">
             <div style="margin-bottom: 10px">Structure coding about me</div>
             <small>
-              <strong>SSR/CSR: </strong> FastAPI, Flask, Nuxt.js, Node.js, CI/CD: Gitlab
+              <strong>SSR/CSR: </strong> FastAPI, Flask, Node.js, Nuxt.js, Vue.js. CI/CD: Gitlab
             </small>
             <br>
             <small>
