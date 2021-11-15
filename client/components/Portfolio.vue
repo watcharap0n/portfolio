@@ -2,6 +2,7 @@
   <v-container>
     <v-row>
       <v-col sm="6">
+        <br><br>
         <h2 style="margin-bottom: 20px">
           <v-icon color="primary">mdi-emoticon-cool</v-icon>
           <strong>Contact Me</strong></h2>
@@ -75,6 +76,7 @@
 
       </v-col>
       <v-col sm="6">
+        <br><br>
         <h2 style="margin-bottom: 20px">
           <v-icon color="primary">mdi-emoticon-cool</v-icon>
           <strong>PortFolio</strong></h2>
@@ -258,16 +260,16 @@ export default {
             )
             this.spin = false
             this.$refs.form.reset()
-            .catch((err)=>{
-              this.$swal.fire(
-                  'Something is wrong!',
-                  'Please Contact Tel: 094-149-9661',
-                  'error'
-              )
-              this.spin = false
-              console.error(err)
-              this.$refs.form.reset()
-            })
+                .catch((err) => {
+                  this.$swal.fire(
+                      'Something is wrong!',
+                      'Please Contact Tel: 094-149-9661',
+                      'error'
+                  )
+                  this.spin = false
+                  console.error(err)
+                  this.$refs.form.reset()
+                })
           })
     }
   }
