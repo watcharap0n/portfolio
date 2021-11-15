@@ -1,5 +1,5 @@
 module.exports = {
-
+    ssr: false,
     head: {
         titleTemplate: '%s Portfolio',
         meta: [
