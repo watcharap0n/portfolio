@@ -32,7 +32,7 @@
         <div>
           <div style="color: grey; font-family: 'Roboto Condensed', sans-serif;">
             Hello, I'm a AI Machine Leaning & FullStack developer & IoT Engineer from Bangkok Thailand. I hold degree of
-            Computer Engineer (IoT) I have always studied and developed myself. by working in both the Backend &
+            Computer Engineer (IoT) I have always studied and developed myself. by working in both the Backend (Restful API) &
             Frontend Pattern Design MVC & RPA (Robotic Process Automation) & AI Machine Learning (Scikit Learn).
             <br>Ref:
             <a href="https://www.linkedin.com/in/watcharapon-weeraborirak/">LinkedIn</a>&nbsp;&
@@ -46,7 +46,7 @@
           <div style="color: grey">
             <div style="margin-bottom: 10px">Structure coding about me</div>
             <small>
-              <strong>Framework: </strong> FastAPI, Flask, Vue.js, Node.js
+              <strong>Framework: </strong> FastAPI, Flask, Nuxt.js, Node.js, CI/CD: Gitlab
             </small>
             <br>
             <small>
@@ -62,7 +62,7 @@
             </small>
             <br>
             <small>
-              <strong>Virtual Machine: </strong> Heroku, AWS (EC2), Firebase Hosting, Docker, Windows Server 2019,
+              <strong>VMWare: </strong> Heroku, AWS (EC2), Firebase Hosting, Docker (Container), Windows Server (IIS),
             </small>
           </div>
         </div>
