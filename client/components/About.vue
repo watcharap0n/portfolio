@@ -50,11 +50,11 @@
             </small>
             <br>
             <small>
-              <strong>AL/ML: </strong> PyTorch, DLIB, OpenCV, Google Could API Scikit-learn
+              <strong>AL/ML: </strong> PyTorch, Scikit-learn, OpenCV, Google Could API, CMake
             </small>
             <br>
             <small>
-              <strong>Data Science/Stack: </strong> matplotlib, pandas, numpy, UCI, Data studio
+              <strong>ML/Algorithms</strong> KNN, Decision tree, SVM, LogisticRegression, KMeans, CountVectorizer
             </small>
             <br>
             <small>
