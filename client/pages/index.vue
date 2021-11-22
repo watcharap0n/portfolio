@@ -46,11 +46,10 @@ export default {
   },
   watch: {
     scrollId(val) {
-      console.log(val)
+      if (val === 'Contact')
+        val = 'Portfolio'
       let element = this.$refs[val];
-      console.log(element)
-      let top = element.offsetTop;
-      window.scrollTo(0, top);
+      element.scrollIntoView({behavior: "smooth"})
     }
   }
 }

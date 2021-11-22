@@ -19,9 +19,6 @@
               PORTFOLIO
             </strong>
 
-            <strong style="color: dodgerblue">
-              WEB
-            </strong>
             <br>
             <small>Development</small>
           </v-app-bar-title>
@@ -65,7 +62,7 @@ export default {
   components: {Footer, Index},
   data: () => ({
     scrollId: '',
-    navBars: ['Home', 'About', 'Portfolio']
+    navBars: ['Home', 'About', 'Portfolio', 'Contact']
   }),
   methods: {
     scrollNav(val) {
