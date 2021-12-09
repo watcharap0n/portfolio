@@ -5,74 +5,34 @@
         <br><br>
         <h2 style="margin-bottom: 20px">
           <v-icon color="primary">mdi-emoticon-cool</v-icon>
-          <strong>Contact Me</strong></h2>
-        <div style="color: grey; font-family: 'Roboto Condensed', sans-serif;">
-          Portfolio from the time of study to the present, by giving a preliminary example. You can find details on both
-          LinkedIn & Github & Website :<a href="https://iot.sau.ac.th/project2020">
-          https://iot.sau.ac.th/project2020 </a>
-          and you can leave your contact information below.
-        </div>
-        <br>
-        <v-card>
-          <v-container>
-            <v-form
-                ref="form"
-                v-model="valid"
-                lazy-validation
-            >
-              <v-text-field
-                  dense
-                  v-model="name"
-                  :rules="nameRules"
-                  label="Name"
-                  required
-              ></v-text-field>
+          <strong>Work history & My project</strong></h2>
+        <div style="font-family: 'Roboto Condensed', sans-serif;">
+          <strong> Artificial Intelligence Developer (Research & Developer)
+          </strong>
+          <p>Mango Consultant Co.,Ltd</p>
+          <div style="color: grey">Between August 2020 to Present (1 year 5 months)</div>
+          <div style="color: grey">
+            555 Rasa Tower 1, Unit 2304-1, 23rd Floor, Phaholyothin Rd, Chatuchak,
+            Chatuchak, Bangkok 10900
+          </div>
+          <br>
+          Job Description: ERP Software and project planning system
+          <p>- System CRM (Chatbot) collect feedback, customers from
+            platform (Facebook, LINE) and potential analyzed (Segmentation
+            Customers) spam detection (Naive Bayes)</p>
+          <p>- Face recognition system (CMake, DLIB) detect workers
+            by taking pictures and processing them in a DLIB model
+          </p>
+          <p>
+            - The RPA system simplifies the marketing process. Retrieve 100,000 people list from DBD Data warehouse
+          </p>
+          <p>
+            - System for requesting quotations (PO) via LINE Developer (LINEOA), which has a microservice architecture.
+          </p>
 
-              <v-text-field
-                  dense
-                  v-model="company"
-                  :rules="nameRules"
-                  label="Company"
-                  required
-              ></v-text-field>
+          </div>
+          <br>
 
-              <v-text-field
-                  dense
-                  v-model="email"
-                  :rules="emailRules"
-                  label="Email"
-                  required
-              ></v-text-field>
-
-              <v-text-field
-                  dense
-                  v-model="tel"
-                  :rules="nameRules"
-                  label="Tel"
-                  required
-              ></v-text-field>
-
-              <v-textarea
-                  dense
-                  name="input-7-1"
-                  label="Additional"
-                  v-model="other"
-              ></v-textarea>
-
-              <v-spacer></v-spacer>
-              <v-btn
-                  small
-                  :disabled="!valid"
-                  color="primary"
-                  class="mr-4"
-                  :loading="spin"
-                  @click="initSubmit"
-              >
-                Submit
-              </v-btn>
-            </v-form>
-          </v-container>
-        </v-card>
 
       </v-col>
       <v-col sm="6">
@@ -152,20 +112,7 @@
 export default {
   data() {
     return {
-      spin: false,
-      valid: true,
-      name: '',
-      company: '',
-      email: '',
-      tel: '',
-      other: '',
-      nameRules: [
-        v => !!v || 'is required!',
-      ],
-      emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-      ],
+
       colors: [
         'indigo',
         'warning',
@@ -234,45 +181,6 @@ export default {
       ],
     }
   },
-  methods: {
-    initSubmit() {
-      let v = this.$refs.form.validate()
-      if (v) {
-        this.spin = true
-        let data = {
-          name: this.name,
-          company: this.company,
-          email: this.email,
-          tel: this.tel,
-          other: this.other
-        }
-        this.apiLINE(data)
-      }
-    },
-    apiLINE(data) {
-      const path = 'https://smart-home-wera.herokuapp.com/callback/portfolio/contact'
-      this.$axios.post(path, data)
-          .then((res) => {
-            this.$swal.fire(
-                'Thank you.',
-                'I will contact you back.',
-                'success'
-            )
-            this.spin = false
-            this.$refs.form.reset()
-                .catch((err) => {
-                  this.$swal.fire(
-                      'Something is wrong!',
-                      'Please Contact Tel: 094-149-9661',
-                      'error'
-                  )
-                  this.spin = false
-                  console.error(err)
-                  this.$refs.form.reset()
-                })
-          })
-    }
-  }
 }
 
 </script>

@@ -13,7 +13,7 @@
           View Portfolio
         </v-btn>
         &nbsp;
-        <v-btn color="primary" rounded href="/resume_en.pdf" download="" class="text-decoration-none">
+        <v-btn color="primary" rounded href="/Resume-eng.pdf" download="" class="text-decoration-none">
           <v-icon>mdi-download</v-icon>
           Download Resume
         </v-btn>
