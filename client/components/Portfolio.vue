@@ -16,10 +16,11 @@
             Chatuchak, Bangkok 10900
           </div>
           <br>
-          Job Description: ERP Software and project planning system
-          <p>- System CRM (Chatbot) collect feedback, customers from
-            platform (Facebook, LINE) and potential analyzed (Segmentation
-            Customers) spam detection (Naive Bayes)</p>
+          <strong>Job Description</strong>: ERP Software and project planning system
+          <v-divider></v-divider>
+          <p>- System CRM (Platform Chatbot) Build chatbot my self, collect feedback customers from
+            platform (Facebook, LINE) and potential analyzed segmentation
+            customers spam detection (Naive Bayes)</p>
           <p>- Face recognition system (CMake, DLIB) detect workers
             by taking pictures and processing them in a DLIB model
           </p>
@@ -29,9 +30,16 @@
           <p>
             - System for requesting quotations (PO) via LINE Developer (LINEOA), which has a microservice architecture.
           </p>
+          <v-divider></v-divider>
+          <p>
+            - <strong>Software development methodologies </strong> : Agile Trello Github Gitlab Bitbucket, Server side
+            FastAPI, Client Side Nuxt, Unit test pytest,
+            CI/CD Github Actions and Gitlab CI,Load Testing with Locust, Authentication with Firebase AUTH or JWT,
+            Deployment with Docker Container on Heroku or AWS EC2
+          </p>
 
-          </div>
-          <br>
+        </div>
+        <br>
 
 
       </v-col>
@@ -137,12 +145,6 @@ export default {
           src: require('~/assets/images/bitec2.jpg')
         },
         {
-          src: require('~/assets/images/bitec1.jpg')
-        },
-        {
-          src: require('~/assets/images/port13.png')
-        },
-        {
           src: require('~/assets/images/port2.jpg')
         },
         {
@@ -167,7 +169,7 @@ export default {
           src: require('~/assets/images/ocr.png')
         },
         {
-          src: require('~/assets/images/new2.png')
+          src: require('~/assets/images/flow_chatbot.png')
         },
         {
           src: require('~/assets/images/new3.png')

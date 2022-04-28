@@ -62,7 +62,11 @@
             </small>
             <br>
             <small>
-              <strong>VMWare: </strong> Heroku, AWS (EC2), Firebase Hosting, Docker (Container), Windows Server (IIS),
+              <strong>Cloud: </strong> Heroku, AWS (EC2), Firebase Hosting, Docker (Container), Windows Server (IIS),
+            </small>
+            <br>
+            <small>
+              <strong>Additional: </strong> Vim, Typing 60 WPM
             </small>
           </div>
         </div>
