@@ -15,6 +15,11 @@ module.exports = {
             }
         ],
         link: [
+              {
+                rel: 'icon',
+                type: 'image/png',
+                href: '/943026.png'
+            },
             {
                 rel: 'preconnect',
                 href: 'https://fonts.googleapis.com'
