@@ -1,5 +1,8 @@
-node_modules
+client/node_modules
 yarn.lock
 .nuxt
 .idea
 .DS_Store
+*.pem
+.gitignore
+client/dist

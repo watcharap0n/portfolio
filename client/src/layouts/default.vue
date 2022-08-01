@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import Index from "../pages/index";
+import Index from "../pages";
 import Footer from "../components/layouts/Footer";
 
 export default {

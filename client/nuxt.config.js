@@ -1,4 +1,8 @@
 module.exports = {
+    server: {
+        host: process.env.NUXT_HOST,
+        port: process.env.NUXT_PORT,
+    },
     ssr: false,
     head: {
         titleTemplate: '%s Portfolio',
@@ -15,7 +19,7 @@ module.exports = {
             }
         ],
         link: [
-              {
+            {
                 rel: 'icon',
                 type: 'image/png',
                 href: '/943026.png'
@@ -53,15 +57,7 @@ module.exports = {
         "vue-sweetalert2/nuxt"
     ],
 
-    srcDir: 'client/',
+    srcDir: 'src/',
 
-    // css: [
-    //     '~/assets/css/style.css'
-    // ],
-    // styleResources: {
-    //     scss: [
-    //         '~/assets/scss/style.scss',
-    //     ]
-    // },
     components: true
 }
