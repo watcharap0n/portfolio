@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  app:
+    build: client
+    container_name: portfolio-nuxtjs
+    restart: always
+    ports:
+      - '4000:4000'
+    command: 'npm run start'
+
+networks:
+  default:
+    external:
+      name:
+        microservice_network
+
+  client_network:
+    external:
+      name: client_network
