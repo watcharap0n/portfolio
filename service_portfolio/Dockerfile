@@ -1,7 +1,7 @@
 FROM node:fermium-bullseye-slim
 
-RUN mkdir -p /var/www/dockerize-nuxt/e-document-nuxt
-WORKDIR /var/www/dockerize-nuxt/e-document-nuxt
+RUN mkdir -p /var/www/dockerize-nuxt/portfolio
+WORKDIR /var/www/dockerize-nuxt/portfolio
 
 COPY package*.json ./
 RUN npm install

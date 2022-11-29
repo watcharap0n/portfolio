@@ -4,11 +4,29 @@ services:
 
   app:
     build:
-      context: client
-    container_name: e-documents-nuxt
+      context: service_portfolio
+    container_name: service_portfolio
     restart: always
     ports:
       - '4000:4000'
     environment:
       - HOST=0.0.0.0
     command: 'npm run start'
+
+  nginx:
+    container_name: nginx_portfolio
+    image: nginx:latest
+    ports:
+      - "81:81"
+    volumes:
+      - ./.nginx_config.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
+    networks:
+      - default
+
+networks:
+  default:
+    external:
+      name:
+        microservice_network
