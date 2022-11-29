@@ -5,37 +5,63 @@
         <br><br>
         <h2 style="margin-bottom: 20px">
           <v-icon color="primary">mdi-emoticon-cool</v-icon>
-          <strong>Work history & My project</strong></h2>
+          <strong>Work histories & My projects</strong></h2>
         <div style="font-family: 'Roboto Condensed', sans-serif;">
-          <strong> Artificial Intelligence Developer (Research & Developer)
+          <v-divider></v-divider>
+
+          <strong>
+            Artificial Intelligence Developer @ Mango Consultant Co.,Ltd
           </strong>
-          <p>Mango Consultant Co.,Ltd</p>
-          <div style="color: grey">Between August 2020 to Present (1 year 5 months)</div>
-          <div style="color: grey">
-            555 Rasa Tower 1, Unit 2304-1, 23rd Floor, Phaholyothin Rd, Chatuchak,
-            Chatuchak, Bangkok 10900
+          <div style="margin-left: 10px">
+            <div style="color: grey; margin-top: 10px">Between August 2020 to August 2022 (2 year)</div>
+            <div style="color: grey">
+              555 Rasa Tower 1, Unit 2304-1, 23rd Floor, Phaholyothin Rd, Chatuchak,
+              Chatuchak, Bangkok 10900
+            </div>
           </div>
+
           <br>
+
           <strong>Job Description</strong>: ERP Software and project planning system
+          <div style="margin-top: 10px; margin-left: 10px">
+            <p>- System CRM (Platform Chatbot) Build chatbot my self, collect feedback customers from
+              platform (Facebook, LINE) and potential analyzed segmentation
+              customers spam detection (Naive Bayes)</p>
+            <p>- Face recognition system (CMake, DLIB) detect workers
+              by taking pictures and processing them in a DLIB model
+            </p>
+          </div>
           <v-divider></v-divider>
-          <p>- System CRM (Platform Chatbot) Build chatbot my self, collect feedback customers from
-            platform (Facebook, LINE) and potential analyzed segmentation
-            customers spam detection (Naive Bayes)</p>
-          <p>- Face recognition system (CMake, DLIB) detect workers
-            by taking pictures and processing them in a DLIB model
-          </p>
-          <p>
-            - The RPA system simplifies the marketing process. Retrieve 100,000 people list from DBD Data warehouse
-          </p>
-          <p>
-            - System for requesting quotations (PO) via LINE Developer (LINEOA), which has a microservice architecture.
-          </p>
+
+          <strong>
+            Full Stack Developer @ THAICOM PUBLIC COMPANY LIMITED
+          </strong>
+
+          <div style="margin-top: 10px; margin-left: 10px">
+            <div style="color: grey">Between August 2022 to Present (4 month)</div>
+            <div style="color: grey">
+              349 SJ Infinite 1 Business Complex, 28th Floor Vibhavadi Rangsit Rd, Chatuchak,
+              Chatuchak, Bangkok 10900
+            </div>
+          </div>
+
+          <br>
+
+          <strong>Job Description</strong>: Digital signature as a service
+          <div style="margin-top: 10px; margin-left: 10px">
+            <p>
+              - Digital signature we provide b2b as a services such as both E-Timestamp and E-Signature, My
+              responsibilities are develop and design backend, frontend and vulnerability service according to best
+              practice
+            </p>
+          </div>
           <v-divider></v-divider>
+
           <p>
-            - <strong>Software development methodologies </strong> : Agile Trello Github Gitlab Bitbucket, Server side
-            FastAPI, Client Side Nuxt, Unit test pytest,
-            CI/CD Github Actions and Gitlab CI,Load Testing with Locust, Authentication with Firebase AUTH or JWT,
-            Deployment with Docker Container on Heroku or AWS EC2
+            - <strong>Software development methodologies </strong> : I'm strong programing langauge base python both web
+            framework or machine framework according to pattern OOP, MVC,
+            PEP-8 and javascript framework vue, nuxt and
+            Deployment design service with nginx k8s, docker container on AWS EC2, google cloud firebase
           </p>
 
         </div>

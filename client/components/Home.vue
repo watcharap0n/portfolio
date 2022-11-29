@@ -4,7 +4,7 @@
       <v-col sm="6">
         <br><br>
         <h2><strong>Watcharapon Weeraborirak </strong></h2>
-        <div style="color: grey; font-family: 'Roboto Condensed', sans-serif;">A I &nbsp; D E V E L O P E R &nbsp; A N D
+        <div style="color: grey; font-family: 'Roboto Condensed', sans-serif;">A I &nbsp; D E V E L O P E R &nbsp; &
           &nbsp; F U L L S T A C K &nbsp; D E V E L O P E R
         </div>
         <br>

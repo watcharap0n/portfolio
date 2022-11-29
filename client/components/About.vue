@@ -46,23 +46,23 @@
           <div style="color: grey">
             <div style="margin-bottom: 10px">Structure coding about me</div>
             <small>
-              <strong>SSR/CSR: </strong> FastAPI, Flask, Node.js, Nuxt.js, Vue.js. CI/CD: Gitlab CI, Github Actions - Unit Test
+              <strong>SSR/CSR: </strong> FastAPI, Flask, Node.js, Nuxt.js, Vue.js
             </small>
             <br>
             <small>
-              <strong>AL/ML: </strong> PyTorch, Scikit-learn, OpenCV, Google Could API, CMake
+              <strong>Infrastructure: </strong> AWS (EC2), Firebase Hosting, Windows Server (IIS), Docker, K8s, Nginx
             </small>
             <br>
             <small>
-              <strong>ML/Algorithms</strong> KNN, Decision tree, SVM, LogisticRegression, KMeans, CountVectorizer
+              <strong>DBMS: </strong> MongoDB, Firebase, MySQL, SQLite
             </small>
             <br>
             <small>
-              <strong>DBMS: </strong> MongoDB, Firebase, NETPIE, MySQL, SQLite
+              <strong>AL/ML: </strong> Scikit-learn, OpenCV, Google Could API, CMake
             </small>
             <br>
             <small>
-              <strong>Cloud: </strong> Heroku, AWS (EC2), Firebase Hosting, Docker (Container), Windows Server (IIS),
+              <strong>My favorites algorithm</strong> KNN, Naive bay, LogisticRegression, KMeans,
             </small>
             <br>
             <small>
@@ -98,12 +98,12 @@ export default {
       {
         language: 'Dart',
         color: 'primary',
-        power: 50
+        power: 45
       },
       {
         language: 'C',
         color: 'deep-purple lighten-3',
-        power: 67
+        power: 65
       },
       {
         language: 'C#',
@@ -113,7 +113,7 @@ export default {
       {
         language: 'C++',
         color: 'deep-purple lighten-1',
-        power: 68
+        power: 65
       },
       {
         language: 'JAVA',

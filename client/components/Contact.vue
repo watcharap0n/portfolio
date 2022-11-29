@@ -45,16 +45,32 @@
         <br>
         <p>
           - Competition project of the exhibition contest information technology of the 19 (The NSC) have a certificate
-          through the finals.
+          through the finals. <a href="https://drive.google.com/file/d/1kv2uU6HgIV-hyeEldoSLtDwPROAfqBDd/view">Ref</a>
         </p>
         <p>
           - BITEC contest, National Research Office participated in research Innovative invention received a
-          certificate
-        </p>
-        <p>
-          - Details can be found at <a href="https://iot.sau.ac.th/project2020"> LINK </a>
+          certificate. <a href="https://drive.google.com/file/d/1bT2ZpPy5Rw93xjzNO9CDGNmq9F3G9Gxv/view">Ref</a>
+
+          details can be found at <a href="https://iot.sau.ac.th/project2020"> LINK </a>
           Referral
         </p>
+
+        <p>
+          - AWS Technical Essentials by Amazon Web Service (AWS) <a href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=1HKKmDsCZ0ycbH0YfP30Cg2"></a>
+        </p>
+
+        <p>
+          - AWS Cloud Practitioner Essentials Day by Amazon Web Service (AWS) <a href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=M-Taw3rP80agreSoe-xUDQ2"></a>
+        </p>
+
+        <p>
+          - BSI Training Academy by BSI <a href="https://drive.google.com/file/d/1uqGYEM08uMic5T58h9FqmYIt2rRSVokV/view?usp=share_link">Ref</a>
+        </p>
+
+        <p>
+          - Voxy Proficiency Achievement Certificate - Intermediate <a href="https://app.voxy.com/certificates/proficiency-test/6377720f81dc4d1bb4f0642e/">Ref</a>
+        </p>
+        
         Advisor
         <div> - Prof. Dr. Nut Otanasup Email: nuto@sau.ac.th</div>
         <div>- Asst. Verapong Kanjanakul Tel: 089-893-4146</div>
