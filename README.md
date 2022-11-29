@@ -1,7 +1,7 @@
 # Portfolio Watcharapon Weeraborirak - Nuxt.js
 
 ****
-URL : `https://portfolio-watcharapon.herokuapp.com`
+URL : `https://watcharapon.dev`
 
 ****
 
