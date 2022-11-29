@@ -3,3 +3,6 @@ yarn.lock
 .nuxt
 .idea
 .DS_Store
+service_portfolio/.nuxt
+service_portfolio/node_modules
+service_portfolio/yarn.lock
