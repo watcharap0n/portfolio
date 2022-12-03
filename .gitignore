@@ -8,3 +8,4 @@ service_portfolio/node_modules
 service_portfolio/yarn.lock
 service_backend/server/db/data
 docker-compose.prod.yml
+*.pem
