@@ -87,18 +87,18 @@ module.exports = {
             {charset: 'utf-8'},
             {name: 'viewport', content: 'width=device-width, initial-scale=1'},
             {
-                hid: 'description',
-                name: 'description',
-                content: 'Watcharapon Weeraborirak, Kane watcharapon.dev'
+                name: 'keywords',
+                content: 'watcharapon, watcharapon weeraborirak, วัชรพล, วีระบริรักษ์, วัชรพล วีระบริรักษ์, kane watcharapon, developer'
             },
             {
-                name: 'keywords',
-                content: 'watcharapon weeraborirak, watcharapon.dev, kane watcharapon, portfolio'
+                hid: 'description',
+                name: 'description',
+                content: 'Watcharapon Weeraborirak, Portfolio, Kane watcharapon, watcharapon.dev, วัชรพล วีระบริรักษ์'
             },
             {
                 hid: 'author',
                 name: 'author',
-                content: 'Watcharapon Weeraborirak'
+                content: 'Watcharapon Weeraborirak, วัชรพล วีระบริรักษ์'
             },
             {
                 hid: 'og:title',
@@ -120,7 +120,7 @@ module.exports = {
                 hid: 'og:description',
                 name: 'og:description',
                 content:
-                    'Watcharapon Weeraborirak, Kane watcharapon.dev',
+                    'Watcharapon Weeraborirak, วัชรพล วีระบริรักษ์',
             }
         ],
 
