@@ -1,57 +1,46 @@
 <template>
-  <div>
-    <v-app style="font-family: 'Ubuntu', sans-serif;">
-      <v-card flat class="overflow-hidden">
-        <v-app-bar
-            absolute
-            color="white"
-            elevate-on-scroll
-            scroll-target="#scrolling-techniques-7"
+  <v-app>
+    <v-card flat class="overflow-hidden">
+      <v-app-bar
+          absolute
+          color="transparent"
+          elevate-on-scroll
+          scroll-target="#scrolling-techniques-7"
+      >
+
+        <v-avatar style="margin-right: 10px" v-if="$vuetify.breakpoint.smAndUp">
+          <img :src="require('~/assets/images/kanelogo.png')">
+        </v-avatar>
+
+        <v-spacer></v-spacer>
+
+        <v-btn v-for="(v, k) in navBars"
+               :key="k"
+               text
+               color="#705125"
+               @click="scrollNav(v)"
         >
+          {{ v }}
 
-          <v-app-bar-title>
-            <v-icon
-                color="primary"
-            >
-              mdi-alpha-p-box
-            </v-icon>
-            <strong>
-              PORTFOLIO
-            </strong>
+        </v-btn>
 
-            <br>
-            <small>Development</small>
-          </v-app-bar-title>
+      </v-app-bar>
 
-          <v-spacer></v-spacer>
+      <v-responsive
+          id="scrolling-techniques-7"
+      >
 
-          <v-btn v-for="(v, k) in navBars"
-                 :key="k"
-                 text
-                 color="primary"
-                 @click="scrollNav(v)"
-          >
-            {{ v }}
-          </v-btn>
+        <Index :scrollId="scrollId"/>
 
-        </v-app-bar>
-
-        <v-responsive
-            id="scrolling-techniques-7"
-        >
-
-          <Index :scrollId="scrollId"/>
-
-        </v-responsive>
+      </v-responsive>
 
 
-      </v-card>
+    </v-card>
 
-      <Footer/>
+    <Footer/>
 
 
-    </v-app>
-  </div>
+  </v-app>
 </template>
 
 <script>

@@ -1,75 +1,95 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col sm="6">
-        <br><br>
-        <h2 style="margin-bottom: 20px">
-          <v-icon color="primary">mdi-emoticon-cool</v-icon>
-          <strong>Work histories & My projects</strong></h2>
+    <v-row style="margin-top: 50px; margin-bottom: 50px">
+      <v-col sm="6" cols="12">
+        <h2 style="font-size: 50px; color: #906F3F">
+          <strong>My career path</strong>
+        </h2>
+        <br>
         <div style="font-family: 'Roboto Condensed', sans-serif;">
-          <v-divider></v-divider>
 
-          <strong>
-            Artificial Intelligence Developer @ Mango Consultant Co.,Ltd
-          </strong>
-          <div style="margin-left: 10px">
-            <div style="color: grey; margin-top: 10px">Between August 2020 to August 2022 (2 year)</div>
+          <span style="color: #E56400">
+            AI Developer @Mango Consultant Co.,Ltd
+          </span>
+
+          <small style="margin-left: 10px">
+            <div style="color: grey;">Between August 2020 to August 2022 (2 year)</div>
             <div style="color: grey">
               555 Rasa Tower 1, Unit 2304-1, 23rd Floor, Phaholyothin Rd, Chatuchak,
               Chatuchak, Bangkok 10900
             </div>
+          </small>
+          <br>
+
+          <div>
+            <small>
+              <strong>Job Description:</strong>
+            </small>
+            <small>
+              ERP Software and project planning system
+            </small>
           </div>
+
+          <small style="margin-top: 10px; margin-left: 10px; color: #493315">
+            <span>
+              - Collaborated on a Face Recognition System using CMake and DLIB for worker identification through image processing.
+            </span>
+            <br>
+            <span>
+              - Developed an RPA system for marketing, streamlining processes by retrieving and processing data from a database with 100,000 records stored in the DBD Data Warehouse.
+            </span>
+            <br>
+            <span>
+              - Designed a microservice architecture for a LINE Developer system, enabling users to request quotations (PO) using the LINE Messaging API.
+            </span>
+            <br>
+            <span>
+              - This role enriched my expertise in diverse technologies, from Fullstack development to AI solutions. I actively contributed to CRM, face recognition, RPA, and microservices projects, enhancing my proficiency in delivering innovative solutions.
+            </span>
+          </small>
+          <v-divider></v-divider>
 
           <br>
 
-          <strong>Job Description</strong>: ERP Software and project planning system
-          <div style="margin-top: 10px; margin-left: 10px">
-            <p>- System CRM (Platform Chatbot) Build chatbot my self, collect feedback customers from
-              platform (Facebook, LINE) and potential analyzed segmentation
-              customers spam detection (Naive Bayes)</p>
-            <p>- Face recognition system (CMake, DLIB) detect workers
-              by taking pictures and processing them in a DLIB model
-            </p>
-          </div>
-          <v-divider></v-divider>
+          <span style="color: #E56400">
+            Fullstack developer & AI Engineer @THAICOM PLC
+          </span>
 
-          <strong>
-            Full Stack Developer @ THAICOM PUBLIC COMPANY LIMITED
-          </strong>
-
-          <div style="margin-top: 10px; margin-left: 10px">
-            <div style="color: grey">Between August 2022 to Present</div>
+          <small style="margin-top: 10px; margin-left: 10px">
+            <div style="color: grey">Between August 2022 to Present (4 month)</div>
             <div style="color: grey">
               349 SJ Infinite 1 Business Complex, 28th Floor Vibhavadi Rangsit Rd, Chatuchak,
               Chatuchak, Bangkok 10900
             </div>
-          </div>
+          </small>
 
           <br>
 
-          <strong>Job Description</strong>: Digital signature as a service
-          <div style="margin-top: 10px; margin-left: 10px">
-            <p>
-              - Digital signature we provide b2b as a services such as both E-Timestamp and E-Signature, My
-              responsibilities are develop and design backend, frontend and vulnerability service according to best
-              practice
-            </p>
+          <div>
+            <small>
+              <strong>Job Description:</strong>
+            </small>
+            <small>
+              Satellite and space technology
+            </small>
           </div>
-          <v-divider></v-divider>
 
-          <p>
-            - <strong>Software development methodologies </strong> : I'm strong programing langauge base python both web
-            framework or machine framework according to pattern OOP, MVC,
-            PEP-8 and javascript framework vue, nuxt and
-            Deployment design service with nginx k8s, docker container on AWS EC2, google cloud firebase
-          </p>
+          <small style="margin-top: 10px; margin-left: 10px; color: #493315">
+            <span>
+              - Data Management: Handling the acquisition, cleansing, and storage of geospatial data in various formats.
+              Automated Data Retrieval: Implementing cron jobs and AWS Lambda for automated data transfer to storage systems.
+              STAC Management: Leading the integration of data into STAC servers for efficient organization and retrieval.
+              Data Categorization: Organizing data into collections based on specific criteria for ease of use.
+              API Integration: Developing solutions for data extraction and presentation via API Gateway endpoints.
+            </span>
+          </small>
 
         </div>
         <br>
 
 
       </v-col>
-      <v-col sm="6">
+      <v-col sm="6" cols="12">
         <br><br>
         <h2 style="margin-bottom: 20px">
           <v-icon color="primary">mdi-emoticon-cool</v-icon>

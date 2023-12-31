@@ -1,27 +1,17 @@
 <template>
 
   <div>
-
-    <div ref="Home">
-      <v-card color="#deebff" flat class="overflow-hidden">
-        <br><br><br><br>
-        <Home/>
-      </v-card>
+    <div ref="Home" class="background-image-home">
+      <Home/>
     </div>
 
-    <div ref="About">
-      <v-card flat class="overflow-auto">
-        <About/>
-        <br><br><br>
-      </v-card>
+    <div ref="About" class="background-image-about" v-if="$vuetify.breakpoint.smAndUp">
+      <About/>
     </div>
 
 
-    <div ref="Portfolio">
-      <v-card color="#deebff" flat class="overflow-auto">
-        <Portfolio/>
-        <br><br><br>
-      </v-card>
+    <div ref="Portfolio" class="background-image-portfolio">
+      <Portfolio/>
     </div>
 
     <div ref="Contact">
@@ -63,5 +53,27 @@ export default {
 .home-profile {
   height: 500px;
   background: #deebff;
+}
+
+.background-image-home {
+  background-image: url('/images/home.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+//background: rgb(255, 255, 255); //background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(151, 29, 19, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.background-image-about {
+  background-image: url('/images/about.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+//background: rgb(255, 255, 255); //background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(151, 29, 19, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.background-image-portfolio {
+  background-image: url('/images/portfolio.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+//background: rgb(255, 255, 255); //background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(151, 29, 19, 1) 100%, rgba(0, 212, 255, 1) 100%);
 }
 </style>

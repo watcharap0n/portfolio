@@ -1,12 +1,10 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col sm="6">
-        <br><br>
-
-        <h2>
-          <v-icon color="primary">mdi-palette</v-icon>
-          <strong>Training history/Achievements</strong></h2>
+    <v-row style="margin-top: 50px; margin-bottom: 50px">
+      <v-col sm="6" cols="12">
+        <h2 class="text-center">
+          <strong style="color: #E56400; font-size: 26px">Training history/Achievements</strong>
+        </h2>
 
         <v-timeline>
           <v-timeline-item
@@ -33,11 +31,9 @@
 
 
       </v-col>
-      <v-col sm="6">
-        <br><br>
-        <h2>
-          <v-icon color="primary">mdi-account-box</v-icon>
-          <strong>Honors / Contact Me</strong></h2>
+      <v-col sm="6" cols="12">
+        <h2 class="text-center">
+          <strong style="font-size: 26px; color: #E56400">Honors / Contact Me</strong></h2>
         <br>
         <strong>The development project before the completion has been done IoT Automated Brine Monitoring and
           Control</strong>
@@ -56,21 +52,25 @@
         </p>
 
         <p>
-          - AWS Technical Essentials by Amazon Web Service (AWS) <a href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=1HKKmDsCZ0ycbH0YfP30Cg2"></a>
+          - AWS Technical Essentials by Amazon Web Service (AWS) <a
+            href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=1HKKmDsCZ0ycbH0YfP30Cg2"></a>
         </p>
 
         <p>
-          - AWS Cloud Practitioner Essentials Day by Amazon Web Service (AWS) <a href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=M-Taw3rP80agreSoe-xUDQ2"></a>
+          - AWS Cloud Practitioner Essentials Day by Amazon Web Service (AWS) <a
+            href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=M-Taw3rP80agreSoe-xUDQ2"></a>
         </p>
 
         <p>
-          - BSI Training Academy by BSI <a href="https://drive.google.com/file/d/1uqGYEM08uMic5T58h9FqmYIt2rRSVokV/view?usp=share_link">Ref</a>
+          - BSI Training Academy by BSI <a
+            href="https://drive.google.com/file/d/1uqGYEM08uMic5T58h9FqmYIt2rRSVokV/view?usp=share_link">Ref</a>
         </p>
 
         <p>
-          - Voxy Proficiency Achievement Certificate - Intermediate <a href="https://app.voxy.com/certificates/proficiency-test/6377720f81dc4d1bb4f0642e/">Ref</a>
+          - Voxy Proficiency Achievement Certificate - Intermediate <a
+            href="https://app.voxy.com/certificates/proficiency-test/6377720f81dc4d1bb4f0642e/">Ref</a>
         </p>
-        
+
         Advisor
         <div> - Prof. Dr. Nut Otanasup Email: nuto@sau.ac.th</div>
         <div>- Asst. Verapong Kanjanakul Tel: 089-893-4146</div>
@@ -129,6 +129,7 @@
                   class="mr-4"
                   :loading="spin"
                   @click="initSubmit"
+                  disabled
               >
                 Submit
               </v-btn>

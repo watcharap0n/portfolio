@@ -1,19 +1,18 @@
 <template>
-  <v-container>
-    <v-row>
+  <v-container style="font-family: 'Nunito', sans-serif;">
+    <v-row style="margin-top: 180px; margin-bottom: 180px">
       <v-col sm="6">
-        <br><br>
-        <h2><strong>Watcharapon Weeraborirak </strong></h2>
-        <div style="color: grey; font-family: 'Roboto Condensed', sans-serif;">A I &nbsp; D E V E L O P E R &nbsp; &
-          &nbsp; F U L L S T A C K &nbsp; D E V E L O P E R
+        <h2 style="font-size: 40px" class="shadow-title">Watcharapon Weeraborirak</h2>
+        <div style="color: grey; font-family: 'Roboto Condensed', sans-serif; letter-spacing: 8px">
+          Fullstack Developer & AI Engineer
         </div>
         <br>
-        <v-btn color="primary" outlined rounded>
+        <v-btn color="#705125" outlined rounded>
           <v-icon>mdi-pencil</v-icon>
           View Portfolio
         </v-btn>
         &nbsp;
-        <v-btn color="primary" rounded href="/Resume-eng.pdf" download="" class="text-decoration-none">
+        <v-btn color="#705125" rounded href="/Resume-eng.pdf" download="" class="text-decoration-none" dark>
           <v-icon>mdi-download</v-icon>
           Download Resume
         </v-btn>
@@ -27,12 +26,13 @@
               target="_blank"
               :href="v.href"
           >
-            <v-icon color="primary" size="24px">{{ v.icon }}</v-icon>
+            <v-icon color="#705125" size="24px">{{ v.icon }}</v-icon>
           </v-btn>
         </div>
       </v-col>
-      <v-col  sm="6">
-        <v-img style="margin-top: -50px" id="image-profile" :src="require(`~/assets/images/Picture2.png`)"  max-height="480" class="mx-16"></v-img>
+      <v-col sm="6">
+<!--        <v-img style="margin-top: -50px" id="image-profile" :src="require(`~/assets/images/Picture2.png`)"-->
+<!--               max-height="480" class="mx-16"></v-img>-->
 
       </v-col>
     </v-row>
@@ -73,5 +73,11 @@ export default {
   margin-left: 180px;
   margin-top: -90px;
 }
+.shadow-title {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+</style>
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 </style>

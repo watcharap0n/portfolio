@@ -1,72 +1,61 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col sm="6">
-        <br><br>
-
-        <h2 style="margin-bottom: 20px">
-          <v-icon color="primary">mdi-xml</v-icon>
-          <strong>Programing Skills</strong></h2>
-        <div
-            style="color: grey; font-family: 'Roboto Condensed', sans-serif;"
-            v-for="(v,k) in skills"
-            :key="k"
-        >
-          <v-row>
-            {{ v.language }}
-            <v-progress-linear
-                buffer-value="0"
-                stream
-                :value="v.power"
-                :color="v.color"
-                height="10"
-            ></v-progress-linear>
-          </v-row>
-          <br>
-        </div>
-
+    <v-row style="margin-top: 100px; margin-bottom: 100px">
+      <v-col sm="6" cols="12">
       </v-col>
-      <v-col sm="6">
-        <br><br>
-        <h2><v-icon color="primary">mdi-palette</v-icon><strong>About Me</strong></h2>
+      <v-col sm="6" cols="12">
+        <h2 style="font-size: 60px; color: #906F3F">
+          <strong>About Me!</strong>
+        </h2>
         <div>
           <div style="color: grey; font-family: 'Roboto Condensed', sans-serif;">
-            Hello, I'm a AI Machine Leaning & FullStack developer & IoT Engineer from Bangkok Thailand. I hold degree of
-            Computer Engineer (IoT) I have always studied and developed myself. by working in both the Backend (Restful API) &
-            Frontend Pattern Design MVC & RPA (Robotic Process Automation) & AI Machine Learning (Scikit Learn).
-            <br>Ref:
-            <a href="https://www.linkedin.com/in/watcharapon-weeraborirak/">LinkedIn</a>&nbsp;&
-            <a
-                href="https://github.com/watcharap0n">Github
-            </a>
-            &
-            <a href="https://iot.sau.ac.th/project2020">IoT</a>
+            <p style="color: #E56400">Hello, I'm a FullStack developer & AI Engineer from Bangkok Thailand.</p>
+            <p style="color: #493315">
+              I hold degree of
+              Computer Engineer (IoT) I have always studied and developed myself. by working in both the Backend
+              (Restful
+              API) &
+              Frontend Pattern Design MVC & RPA (Robotic Process Automation) & AI Machine Learning (Scikit Learn).
+            </p>
+            <br>
           </div>
-          <br>
           <div style="color: grey">
-            <div style="margin-bottom: 10px">Structure coding about me</div>
+            <div style="margin-bottom: 10px; color: #E56400">Tech stack details</div>
             <small>
-              <strong>SSR/CSR: </strong> FastAPI, Flask, Node.js, Nuxt.js, Vue.js
+              <strong>Web Development Technologies</strong>
+            </small>
+            <small style="color: #493315">
+              Server-Side Rendering (SSR) & Client-Side Rendering (CSR): Utilization of FastAPI, Flask, and Node.js for
+              backend development. Proficiency in Nuxt.js, Vue.js, and React.js for frontend design and
+              interaction.
+            </small>
+
+            <br>
+            <small>
+              <strong>Infrastructure and Deployment:</strong>
+            </small>
+            <small style="color: #493315">
+              Extensive experience with Amazon Web Services for cloud-based solutions, skilled in managing Windows
+              Server environments using IIS. Proficient in containerization with Docker, along with web serving and
+              reverse proxying with Nginx.
+            </small>
+
+            <br>
+            <small>
+              <strong>Database Management Systems (DBMS):</strong>
+            </small>
+            <small style="color: #493315">
+              Versatile in handling various database systems including MongoDB, Firebase, MySQL, SQLite, and PostgreSQL
+              with PostGIS extension for geographic information systems.
             </small>
             <br>
             <small>
-              <strong>Infrastructure: </strong> AWS (EC2), Firebase Hosting, Windows Server (IIS), Docker, K8s, Nginx
+              <strong>Artificial Intelligence and Machine Learning:</strong>
             </small>
-            <br>
-            <small>
-              <strong>DBMS: </strong> MongoDB, Firebase, MySQL, SQLite
-            </small>
-            <br>
-            <small>
-              <strong>AL/ML: </strong> Scikit-learn, OpenCV, Google Could API, CMake
-            </small>
-            <br>
-            <small>
-              <strong>My favorites algorithm</strong> KNN, Naive bay, LogisticRegression, KMeans,
-            </small>
-            <br>
-            <small>
-              <strong>Additional: </strong> Vim, Typing 60 WPM
+            <small style="color: #493315">
+              Competent in AI/ML technologies, using tools like Scikit-learn for machine learning algorithms, OpenCV for
+              computer vision, and leveraging Google Cloud API. Familiar with the use of CMake for cross-platform
+              software management.
             </small>
           </div>
         </div>

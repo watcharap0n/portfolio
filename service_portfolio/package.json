@@ -15,6 +15,11 @@
     "@nuxtjs/vuetify": "^1.12.1",
     "bootstrap-vue": "^2.21.2",
     "nuxt": "^2.15.8",
-    "vue-sweetalert2": "^5.0.2"
+    "vue-sweetalert2": "^5.0.2",
+    "vue-horizontal": "^0.8.12",
+    "@nuxtjs/auth-next": "5.0.0-1642502410.8e1c713",
+    "postcss": "^8.4.25",
+    "tailwindcss": "^3.3.2",
+    "@nuxtjs/date-fns": "^1.5.0"
   }
 }
