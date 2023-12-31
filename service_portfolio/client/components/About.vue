@@ -4,7 +4,7 @@
       <v-col sm="6" cols="12">
       </v-col>
       <v-col sm="6" cols="12">
-        <h2 style="font-size: 60px; color: #906F3F">
+        <h2 style="font-size: 60px; color: #906F3F" class="shadow-title">
           <strong>About Me!</strong>
         </h2>
         <div>
@@ -113,3 +113,9 @@ export default {
   }),
 }
 </script>
+
+<style>
+.shadow-title {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+</style>

@@ -2,7 +2,7 @@
   <v-container>
     <v-row style="margin-top: 50px; margin-bottom: 50px">
       <v-col sm="6" cols="12">
-        <h2 style="font-size: 50px; color: #906F3F">
+        <h2 style="font-size: 50px; color: #906F3F" class="shadow-title">
           <strong>My career path</strong>
         </h2>
         <br>
@@ -232,4 +232,10 @@ export default {
 }
 
 </script>
+
+<style>
+.shadow-title {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+</style>
 

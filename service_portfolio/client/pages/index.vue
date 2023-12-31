@@ -9,6 +9,10 @@
       <About/>
     </div>
 
+   <div ref="About" v-if="$vuetify.breakpoint.smAndDown">
+      <About/>
+    </div>
+
 
     <div ref="Portfolio" class="background-image-portfolio">
       <Portfolio/>
@@ -17,7 +21,6 @@
     <div ref="Contact">
       <Contact/>
     </div>
-
   </div>
 
 </template>
