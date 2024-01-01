@@ -110,7 +110,7 @@ module.exports = {
                 prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:type',
                 name: 'og:type',
-                content: 'article'
+                content: 'website'
             },
             {
                 prefix: 'og: http://ogp.me/ns#',
@@ -129,7 +129,7 @@ module.exports = {
                 prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:image',
                 name: 'og:image',
-                content: 'https://watcharapon.dev/images/kane-profile.png'
+                content: 'https://watcharapon.dev/images/og2.png'
             }
         ],
 
