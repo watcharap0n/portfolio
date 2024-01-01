@@ -123,7 +123,7 @@ module.exports = {
                 hid: 'og:description',
                 property: 'og:description',
                 content:
-                    'Portfolio of Watcharapon Weeraborirak, Kane Watcharapon, วัชรพล วีระบริรักษ์'
+                    'Watcharapon Weeraborirak, Portfolio, Kane watcharapon, watcharapon.dev, วัชรพล วีระบริรักษ์, portfolio, Fullstack developer & AI Engineer at Thaicom PCL. Hiring me now! :) search me on google by "watcharapon weeraborirak" or "kane watcharapon" or "วัชรพล วีระบริรักษ์" email me at wera.watcharapon@gmail.com or linkedin.com/in/watcharapon-weeraborirak'
             },
             {
                 prefix: 'og: http://ogp.me/ns#',
