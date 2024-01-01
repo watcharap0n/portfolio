@@ -103,32 +103,32 @@ module.exports = {
             {
                 prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:url',
-                name: 'og:url',
+                property: 'og:url',
                 content: 'https://watcharapon.dev/'
             },
             {
                 prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:type',
-                name: 'og:type',
+                property: 'og:type',
                 content: 'website'
             },
             {
                 prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:title',
-                name: 'og:title',
+                property: 'og:title',
                 content: 'Watcharapon Weeraborirak | Portfolio'
             },
             {
                 prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:description',
-                name: 'og:description',
+                property: 'og:description',
                 content:
                     'Portfolio of Watcharapon Weeraborirak, Kane Watcharapon, วัชรพล วีระบริรักษ์'
             },
             {
                 prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:image',
-                name: 'og:image',
+                property: 'og:image',
                 content: 'https://watcharapon.dev/images/og2.png'
             }
         ],
