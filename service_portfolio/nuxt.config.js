@@ -124,7 +124,7 @@ module.exports = {
             {
                 hid: 'og:image',
                 name: 'og:image',
-                content: 'https://watcharapon.dev/kane-profile.png'
+                content: 'https://watcharapon.dev/images/kane-profile.png'
             }
         ],
 
