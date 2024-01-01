@@ -105,7 +105,7 @@
             <v-btn
                 x-small
                 rounded
-                color="primary"
+                color="#E56400"
                 v-bind="attrs"
                 v-on="on"
             >
@@ -117,7 +117,7 @@
             <v-btn
                 x-small
                 rounded
-                color="primary"
+                color="#E56400"
                 v-bind="attrs"
                 v-on="on"
             >
@@ -139,19 +139,19 @@
 
         <br>
         <div style="color: grey; font-family: 'Roboto Condensed', sans-serif;">
-          <div style="margin-bottom: 20px"><strong>Download pdf.</strong></div>
+          <div style="margin-bottom: 20px"><strong>Download PDF</strong></div>
           <v-row style="margin-left: 5px">
-            <v-btn class="text-decoration-none" color="info" x-small rounded href="/face_rec.pdf" download="">
+            <v-btn dark class="text-decoration-none" color="#E56400" x-small rounded href="/face_rec.pdf" download="">
               <v-icon x-small>mdi-download</v-icon>
               Face Recognition
             </v-btn>
             &nbsp;
-            <v-btn class="text-decoration-none" color="info" x-small rounded href="/chatbot.pdf" download="">
+            <v-btn dark class="text-decoration-none" color="#E56400" x-small rounded href="/chatbot.pdf" download="">
               <v-icon x-small>mdi-download</v-icon>
               ChatBot
             </v-btn>
             &nbsp;
-            <v-btn class="text-decoration-none" color="info" x-small rounded href="/rpa.pdf" download="">
+            <v-btn dark class="text-decoration-none" color="#E56400" x-small rounded href="/rpa.pdf" download="">
               <v-icon x-small>mdi-download</v-icon>
               RPA
             </v-btn>

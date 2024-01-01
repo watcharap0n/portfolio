@@ -2,6 +2,14 @@
   <v-container>
     <v-row style="margin-top: 100px; margin-bottom: 100px">
       <v-col sm="6" cols="12">
+        <v-img
+            style="margin-top: 50px"
+            id="image-profile"
+            :src="require(`~/assets/images/about.png`)"
+            max-height="600"
+            class="mx-16"
+        >
+        </v-img>
       </v-col>
       <v-col sm="6" cols="12">
         <h2 style="font-size: 60px; color: #906F3F" class="shadow-title">

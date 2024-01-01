@@ -101,26 +101,30 @@ module.exports = {
                 content: 'Watcharapon Weeraborirak, วัชรพล วีระบริรักษ์'
             },
             {
-                hid: 'og:title',
-                name: 'og:title',
-                content: 'portfolio',
+                hid: 'og:url',
+                name: 'og:url',
+                content: 'https://watcharapon.dev'
             },
             {
                 hid: 'og:type',
                 name: 'og:type',
-                content: 'website',
+                content: 'website'
             },
             {
-                hid: 'og:image',
-                name: 'og:image',
-                content:
-                    'https://watcharapon.dev/kanelogo.png'
+                hid: 'og:title',
+                name: 'og:title',
+                content: 'Watcharapon Weeraborirak | Portfolio'
             },
             {
                 hid: 'og:description',
                 name: 'og:description',
                 content:
-                    'Watcharapon Weeraborirak, วัชรพล วีระบริรักษ์',
+                    'Portfolio of Watcharapon Weeraborirak, Kane Watcharapon, วัชรพล วีระบริรักษ์'
+            },
+            {
+                hid: 'og:image',
+                name: 'og:image',
+                content: 'https://watcharapon.dev/kane-profile.png'
             }
         ],
 

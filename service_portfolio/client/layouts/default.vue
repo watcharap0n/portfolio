@@ -8,7 +8,7 @@
           scroll-target="#scrolling-techniques-7"
       >
 
-        <v-avatar style="margin-right: 10px" v-if="$vuetify.breakpoint.smAndUp">
+        <v-avatar style="margin-right: 10px">
           <img :src="require('~/assets/images/kanelogo.png')">
         </v-avatar>
 

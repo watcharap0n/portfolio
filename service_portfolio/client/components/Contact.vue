@@ -3,7 +3,7 @@
     <v-row style="margin-top: 50px; margin-bottom: 50px">
       <v-col sm="6" cols="12">
         <h2 class="text-center">
-          <strong style="color: #E56400; font-size: 26px">Training history/Achievements</strong>
+          <strong class="shadow-title" style="color: #906F3F; font-size: 26px">Training history/Achievements</strong>
         </h2>
 
         <v-timeline>
@@ -16,14 +16,16 @@
             <template v-slot:opposite>
             <span
                 :class="`headline font-weight-bold ${year.color}--text`"
+                :style="`color: ${year.color};`"
                 v-text="year.year"
             ></span>
             </template>
             <div class="py-4">
-              <h6 :class="`font-weight-light mb-4 ${year.color}--text`" v-text="year.topic">
+              <h6 :class="`font-weight-light mb-4 ${year.color}--text`" v-text="year.topic"
+                  :style="`color: ${year.color};`"
+              >
               </h6>
-              <div v-text="year.desc">
-
+              <div style="color: #493315" v-text="year.desc">
               </div>
             </div>
           </v-timeline-item>
@@ -33,17 +35,17 @@
       </v-col>
       <v-col sm="6" cols="12">
         <h2 class="text-center">
-          <strong style="font-size: 26px; color: #E56400">Honors / Contact Me</strong></h2>
+          <strong class="shadow-title" style="font-size: 26px; color: #906F3F">Honors / Contact Me</strong></h2>
         <br>
-        <strong>The development project before the completion has been done IoT Automated Brine Monitoring and
+        <strong style="color: #E56400">The development project before the completion has been done IoT Automated Brine Monitoring and
           Control</strong>
         <br>
         <br>
-        <p>
+        <p style="color: #493315">
           - Competition project of the exhibition contest information technology of the 19 (The NSC) have a certificate
           through the finals. <a href="https://drive.google.com/file/d/1kv2uU6HgIV-hyeEldoSLtDwPROAfqBDd/view">Ref</a>
         </p>
-        <p>
+        <p style="color: #493315">
           - BITEC contest, National Research Office participated in research Innovative invention received a
           certificate. <a href="https://drive.google.com/file/d/1bT2ZpPy5Rw93xjzNO9CDGNmq9F3G9Gxv/view">Ref</a>
 
@@ -51,22 +53,22 @@
           Referral
         </p>
 
-        <p>
+        <p style="color: #493315">
           - AWS Technical Essentials by Amazon Web Service (AWS) <a
             href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=1HKKmDsCZ0ycbH0YfP30Cg2"></a>
         </p>
 
-        <p>
+        <p style="color: #493315">
           - AWS Cloud Practitioner Essentials Day by Amazon Web Service (AWS) <a
             href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=M-Taw3rP80agreSoe-xUDQ2"></a>
         </p>
 
-        <p>
+        <p style="color: #493315">
           - BSI Training Academy by BSI <a
             href="https://drive.google.com/file/d/1uqGYEM08uMic5T58h9FqmYIt2rRSVokV/view?usp=share_link">Ref</a>
         </p>
 
-        <p>
+        <p style="color: #493315">
           - Voxy Proficiency Achievement Certificate - Intermediate <a
             href="https://app.voxy.com/certificates/proficiency-test/6377720f81dc4d1bb4f0642e/">Ref</a>
         </p>
@@ -151,13 +153,13 @@ export default {
         {
           topic: 'Institute of National Electronics and Computer Technology\n' +
               'Center (NECTEC)',
-          color: 'amber',
+          color: '#E56400',
           year: 'March 2019 to March 2019',
           desc: 'Of course Camp electronics technology IoT (there are also two other diplomas).'
         },
         {
           topic: 'National Science and Technology Agency',
-          color: 'cyan',
+          color: '#E56400',
           year: 'August 2019 - March 2020',
           desc: 'Great Commission of the 19th Information Technology Contest of Thailand,\n' +
               'As a project developer who passed the final,\n' +
@@ -166,13 +168,13 @@ export default {
         },
         {
           topic: 'National Research Office Inventor \'s Day 2020',
-          color: 'green',
+          color: '#E56400',
           year: 'February 2020 to February 2020',
           desc: 'Participated in presenting research results, inventions and innovations, Automatic monitoring and control system IoT.'
         },
         {
           topic: 'Institute President of Southeast Asia University',
-          color: 'pink',
+          color: '#E56400',
           year: 'March 2020 to March 2020',
           desc: 'SAU English Test Course.'
         },
@@ -235,4 +237,10 @@ export default {
 }
 
 </script>
+
+<style>
+.shadow-title {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+</style>
 
