@@ -82,10 +82,10 @@ module.exports = {
     ssr: false,
 
     head: {
-        title: 'portfolio',
+        title: 'Portfolio',
         meta: [
             {charset: 'utf-8'},
-            {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+            {name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
             {
                 name: 'keywords',
                 content: 'watcharapon, watcharapon weeraborirak, วัชรพล, วีระบริรักษ์, วัชรพล วีระบริรักษ์, kane watcharapon, developer'
@@ -93,7 +93,7 @@ module.exports = {
             {
                 hid: 'description',
                 name: 'description',
-                content: 'Watcharapon Weeraborirak, Portfolio, Kane watcharapon, watcharapon.dev, วัชรพล วีระบริรักษ์'
+                content: 'Watcharapon Weeraborirak, Portfolio, Kane watcharapon, watcharapon.dev, วัชรพล วีระบริรักษ์, portfolio, Fullstack developer & AI Engineer at Thaicom PCL. Hiring me now! :) search me on google by "watcharapon weeraborirak" or "kane watcharapon" or "วัชรพล วีระบริรักษ์" email me at wera.watcharapon@gmail.com or linkedin.com/in/watcharapon-weeraborirak'
             },
             {
                 hid: 'author',
@@ -101,27 +101,32 @@ module.exports = {
                 content: 'Watcharapon Weeraborirak, วัชรพล วีระบริรักษ์'
             },
             {
+                prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:url',
                 name: 'og:url',
-                content: 'https://watcharapon.dev'
+                content: 'https://watcharapon.dev/'
             },
             {
+                prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:type',
                 name: 'og:type',
-                content: 'website'
+                content: 'article'
             },
             {
+                prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:title',
                 name: 'og:title',
                 content: 'Watcharapon Weeraborirak | Portfolio'
             },
             {
+                prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:description',
                 name: 'og:description',
                 content:
                     'Portfolio of Watcharapon Weeraborirak, Kane Watcharapon, วัชรพล วีระบริรักษ์'
             },
             {
+                prefix: 'og: http://ogp.me/ns#',
                 hid: 'og:image',
                 name: 'og:image',
                 content: 'https://watcharapon.dev/images/kane-profile.png'
