@@ -56,7 +56,7 @@
           </span>
 
           <small style="margin-top: 10px; margin-left: 10px">
-            <div style="color: grey">Between August 2022 to Present (4 month)</div>
+            <div style="color: grey">Between August 2022 to Present</div>
             <div style="color: grey">
               349 SJ Infinite 1 Business Complex, 28th Floor Vibhavadi Rangsit Rd, Chatuchak,
               Chatuchak, Bangkok 10900
