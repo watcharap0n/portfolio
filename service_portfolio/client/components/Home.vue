@@ -13,7 +13,12 @@
             View Portfolio
           </v-btn>
           &nbsp;
-          <v-btn color="#705125" rounded href="/Resume-eng.pdf" download="" class="text-decoration-none" dark>
+          <v-btn
+              color="#705125" rounded
+              class="text-decoration-none"
+              dark
+              @click="downloadResume"
+          >
             <v-icon>mdi-download</v-icon>
             Download Resume
           </v-btn>
@@ -66,6 +71,11 @@ export default {
           href: 'https://www.youtube.com/channel/UC_FWUbq4dPoXRBEpCfKQyDw'
         }
       ]
+    }
+  },
+  methods: {
+    downloadResume() {
+      window.open('/Resume-new-version.pdf', '_blank')
     }
   }
 }
