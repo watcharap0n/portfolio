@@ -9,7 +9,7 @@
       <About/>
     </div>
 
-   <div ref="About" v-if="$vuetify.breakpoint.smAndDown">
+    <div ref="About" v-if="$vuetify.breakpoint.smAndDown">
       <About/>
     </div>
 
@@ -32,6 +32,29 @@ import About from "../components/About";
 import Home from "../components/Home";
 
 export default {
+  head: {
+    script: [
+      {
+        hid: 'gtag',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-C0GJ389PTN',
+        async: true,
+      },
+      {
+        hid: 'gtag-init',
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-C0GJ389PTN');
+        `,
+        type: 'text/javascript',
+        charset: 'utf-8'
+      },
+    ],
+    __dangerouslyDisableSanitizersByTagID: {
+      'gtag-init': ['innerHTML']
+    }
+  },
   components: {Portfolio, About, Home, Contact},
   props: ['scrollId'],
   data() {

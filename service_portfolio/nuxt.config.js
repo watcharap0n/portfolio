@@ -135,6 +135,10 @@ module.exports = {
 
         script: [
             {
+                src: 'https://www.googletagmanager.com/gtag/js?id=G-C0GJ389PTN',
+                async: true
+            },
+            {
                 src: 'https://accounts.google.com/gsi/client'
             },
             {
