@@ -5,7 +5,7 @@
         <div class="text-center">
           <h2 style="font-size: 40px" class="shadow-title">Watcharapon Weeraborirak</h2>
           <div style="color: grey; font-family: 'Roboto Condensed', sans-serif; letter-spacing: 8px">
-            Fullstack Developer & AI Engineer
+            AI Engineer & Fullstack Developer
           </div>
           <br>
           <v-btn color="#705125" outlined rounded>
@@ -75,7 +75,10 @@ export default {
   },
   methods: {
     downloadResume() {
-      window.open('/Resume-new-version.pdf', '_blank')
+      window.open('/resume-2024-08-09.pdf', '_blank')
+    },
+    viewPortfolio() {
+      this.$emit('view-portfolio', 'Portfolio')
     }
   }
 }

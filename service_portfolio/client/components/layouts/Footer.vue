@@ -10,8 +10,8 @@
     >
       <v-card-text>
         <v-btn
-            v-for="icon in icons"
-            :key="icon"
+            v-for="(icon, key) in icons"
+            :key="key"
             class="mx-4"
             icon
             :href="icon.link"

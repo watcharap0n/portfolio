@@ -1,27 +1,29 @@
 <template>
 
-  <div>
-    <div ref="Home" class="background-image-home">
-      <Home/>
-    </div>
+  <client-only>
+    <div>
+      <div ref="Home" class="background-image-home">
+        <Home/>
+      </div>
 
-    <div ref="About" class="background-image-about" v-if="$vuetify.breakpoint.smAndUp">
-      <About/>
-    </div>
+      <div ref="About" class="background-image-about" v-if="$vuetify.breakpoint.smAndUp">
+        <About/>
+      </div>
 
-    <div ref="About" v-if="$vuetify.breakpoint.smAndDown">
-      <About/>
-    </div>
+      <div ref="About" v-if="$vuetify.breakpoint.smAndDown">
+        <About/>
+      </div>
 
 
-    <div ref="Portfolio" class="background-image-portfolio">
-      <Portfolio/>
-    </div>
+      <div ref="Portfolio" class="background-image-portfolio">
+        <Portfolio/>
+      </div>
 
-    <div ref="Contact">
-      <Contact/>
+      <div ref="Contact">
+        <Contact/>
+      </div>
     </div>
-  </div>
+  </client-only>
 
 </template>
 
@@ -32,27 +34,46 @@ import About from "../components/About";
 import Home from "../components/Home";
 
 export default {
-  head: {
-    script: [
-      {
-        hid: 'gtag',
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-C0GJ389PTN',
-        async: true,
-      },
-      {
-        hid: 'gtag-init',
-        innerHTML: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-C0GJ389PTN');
-        `,
-        type: 'text/javascript',
-        charset: 'utf-8'
-      },
-    ],
-    __dangerouslyDisableSanitizersByTagID: {
-      'gtag-init': ['innerHTML']
+  head(){
+    return {
+      title: 'Watcharapon Weeraborirak',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Watcharapon Weeraborirak - Fullstack Developer & AI Engineer' },
+        { hid: 'keywords', name: 'keywords', content: 'Watcharapon Weeraborirak, วัชรพล, วีรบริรักษ์, Fullstack Developer, AI Engineer' },
+        { hid: 'author', name: 'author', content: 'Watcharapon Weeraborirak' },
+        { hid: 'og:title', property: 'og:title', content: 'Watcharapon Weeraborirak - Fullstack Developer & AI Engineer' },
+        { hid: 'og:description', property: 'og:description', content: 'Watcharapon Weeraborirak - Fullstack Developer & AI Engineer' },
+        { hid: 'og:image', property: 'og:image', content: 'https://watcharapon.dev/images/og2.png' },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:url', property: 'og:url', content: 'https://watcharapon.dev' },
+        { hid: 'twitter:card', name: 'twitter:card', content: 'https://watcharapon.dev/images/og2.png' },
+        { hid: 'twitter:title', name: 'twitter:title', content: 'Watcharapon Weeraborirak - Fullstack Developer & AI Engineer' },
+        { hid: 'twitter:description', name: 'twitter:description', content: 'Watcharapon Weeraborirak - Fullstack Developer & AI Engineer' },
+        { hid: 'twitter:image', name: 'twitter:image', content: 'https://watcharapon.dev/images/og2.png' },
+      ],
+      script: [
+        {
+          hid: 'gtag',
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-C0GJ389PTN',
+          async: true,
+        },
+        {
+          hid: 'gtag-init',
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-C0GJ389PTN');
+          `,
+          type: 'text/javascript',
+          charset: 'utf-8'
+        },
+      ],
+      __dangerouslyDisableSanitizersByTagID: {
+        'gtag-init': ['innerHTML']
+      }
     }
   },
   components: {Portfolio, About, Home, Contact},
@@ -64,7 +85,7 @@ export default {
     scrollId(val) {
       let element = this.$refs[val];
       element.scrollIntoView({behavior: "smooth"})
-    }
+    },
   }
 }
 </script>

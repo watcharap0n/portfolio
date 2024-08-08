@@ -1,113 +1,79 @@
 <template>
   <v-container>
-    <v-row style="margin-top: 50px; margin-bottom: 50px">
+    <v-row class="my-12">
       <v-col sm="6" cols="12">
-        <h2 style="font-size: 50px; color: #906F3F" class="shadow-title">
-          <strong>My career path</strong>
+        <h2 class="shadow-title text-6xl text-brown-dark">
+          <strong>My Career Path</strong>
         </h2>
         <br>
-        <div style="font-family: 'Roboto Condensed', sans-serif;">
-
-          <span style="color: #E56400">
-            AI Developer @Mango Consultant Co.,Ltd
+        <div class="font-roboto-condensed">
+          <span class="text-orange text-xl font-bold">
+            AI Engineer at THAICOM PLC (Formerly Full-Stack Developer)
           </span>
-
-          <small style="margin-left: 10px">
-            <div style="color: grey;">Between August 2020 to August 2022 (2 year)</div>
-            <div style="color: grey">
-              555 Rasa Tower 1, Unit 2304-1, 23rd Floor, Phaholyothin Rd, Chatuchak,
-              Chatuchak, Bangkok 10900
-            </div>
+          <small class="block text-grey mt-2 ml-2">
+            August 2022 - Present
+          </small>
+          <small class="block text-grey ml-2">
+            349 SJ Infinite 1 Business Complex, 28th Floor Vibhavadi Rangsit Rd, Chatuchak, Bangkok 10900
           </small>
           <br>
-
-          <div>
-            <small>
-              <strong>Job Description:</strong>
-            </small>
-            <small>
-              ERP Software and project planning system
-            </small>
+          <div class="text-brown-light mt-4 ml-4">
+            <strong>Key Achievements:</strong>
+            <p>- AI Engineer</p>
+            <p>- Managed geospatial data and deployed AI models using AWS</p>
+            <v-btn color="#705125" dark rounded @click="showMoreThaicom">
+              <v-icon left>
+                mdi-emoticon-cool
+              </v-icon>
+              More Details</v-btn>
           </div>
 
-          <small style="margin-top: 10px; margin-left: 10px; color: #493315">
-            <span>
-              - Collaborated on a Face Recognition System using CMake and DLIB for worker identification through image processing.
-            </span>
-            <br>
-            <span>
-              - Developed an RPA system for marketing, streamlining processes by retrieving and processing data from a database with 100,000 records stored in the DBD Data Warehouse.
-            </span>
-            <br>
-            <span>
-              - Designed a microservice architecture for a LINE Developer system, enabling users to request quotations (PO) using the LINE Messaging API.
-            </span>
-            <br>
-            <span>
-              - This role enriched my expertise in diverse technologies, from Fullstack development to AI solutions. I actively contributed to CRM, face recognition, RPA, and microservices projects, enhancing my proficiency in delivering innovative solutions.
-            </span>
-          </small>
-          <v-divider></v-divider>
+          <v-divider class="my-6"></v-divider>
 
-          <br>
-
-          <span style="color: #E56400">
-            Fullstack developer & AI Engineer @THAICOM PLC
+          <span class="text-orange text-xl font-bold">
+            AI Developer at Mango Consultant Co., Ltd
           </span>
-
-          <small style="margin-top: 10px; margin-left: 10px">
-            <div style="color: grey">Between August 2022 to Present</div>
-            <div style="color: grey">
-              349 SJ Infinite 1 Business Complex, 28th Floor Vibhavadi Rangsit Rd, Chatuchak,
-              Chatuchak, Bangkok 10900
-            </div>
+          <small class="block text-grey mt-2 ml-2">
+            August 2020 - August 2022
           </small>
-
+          <small class="block text-grey ml-2">
+            555 Rasa Tower 1, Unit 2304-1, 23rd Floor, Phaholyothin Rd, Chatuchak, Bangkok 10900
+          </small>
           <br>
-
-          <div>
-            <small>
-              <strong>Job Description:</strong>
-            </small>
-            <small>
-              Satellite and space technology
-            </small>
+          <div class="text-brown-light mt-4 ml-4">
+            <strong>Key Achievements:</strong>
+            <p>- Developed Face Recognition System and RPA for marketing</p>
+            <p>- Created microservice architecture for LINE Developer system</p>
+            <v-btn color="#705125" dark rounded @click="showMoreMango">
+              <v-icon left>
+                mdi-emoticon-cool
+              </v-icon>
+              More Details
+            </v-btn>
           </div>
-
-          <small style="margin-top: 10px; margin-left: 10px; color: #493315">
-            <span>
-              - Data Management: Handling the acquisition, cleansing, and storage of geospatial data in various formats.
-              Automated Data Retrieval: Implementing cron jobs and AWS Lambda for automated data transfer to storage systems.
-              STAC Management: Leading the integration of data into STAC servers for efficient organization and retrieval.
-              Data Categorization: Organizing data into collections based on specific criteria for ease of use.
-              API Integration: Developing solutions for data extraction and presentation via API Gateway endpoints.
-            </span>
-          </small>
-
         </div>
-        <br>
-
-
       </v-col>
+
       <v-col sm="6" cols="12">
         <br><br>
-        <h2 style="margin-bottom: 20px">
+        <h2 class="mb-4">
           <v-icon color="primary">mdi-emoticon-cool</v-icon>
-          <strong>PortFolio</strong></h2>
+          <strong>Portfolio</strong>
+        </h2>
         <v-carousel
-            cycle
-            height="500"
-            class="overflow-y-auto"
-            hide-delimiter-background
-            show-arrows-on-hover
+          cycle
+          height="500"
+          class="overflow-y-auto"
+          hide-delimiter-background
+          show-arrows-on-hover
         >
           <template v-slot:prev="{ on, attrs }">
             <v-btn
-                x-small
-                rounded
-                color="#E56400"
-                v-bind="attrs"
-                v-on="on"
+              x-small
+              rounded
+              color="#E56400"
+              v-bind="attrs"
+              v-on="on"
             >
               <v-icon>mdi-arrow-left</v-icon>
               Previous slide
@@ -115,32 +81,31 @@
           </template>
           <template v-slot:next="{ on, attrs }">
             <v-btn
-                x-small
-                rounded
-                color="#E56400"
-                v-bind="attrs"
-                v-on="on"
+              x-small
+              rounded
+              color="#E56400"
+              v-bind="attrs"
+              v-on="on"
             >
               Next slide
               <v-icon>mdi-arrow-right</v-icon>
             </v-btn>
           </template>
           <v-carousel-item
-              v-for="(item, i) in items"
-              :key="i"
-              :src="item.src"
-              reverse-transition="fade-transition"
-              transition="fade-transition"
+            v-for="(item, i) in items"
+            :key="i"
+            :src="item.src"
+            reverse-transition="fade-transition"
+            transition="fade-transition"
           >
-            <div class="display-3">
-            </div>
+            <div class="display-3"></div>
           </v-carousel-item>
         </v-carousel>
 
         <br>
-        <div style="color: grey; font-family: 'Roboto Condensed', sans-serif;">
-          <div style="margin-bottom: 20px"><strong>Download PDF</strong></div>
-          <v-row style="margin-left: 5px">
+        <div class="text-grey font-roboto-condensed">
+          <div class="mb-4"><strong>Download PDF</strong></div>
+          <v-row class="ml-1">
             <v-btn dark class="text-decoration-none" color="#E56400" x-small rounded href="/face_rec.pdf" download="">
               <v-icon x-small>mdi-download</v-icon>
               Face Recognition
@@ -159,6 +124,38 @@
         </div>
       </v-col>
     </v-row>
+
+    <v-dialog v-model="dialogThaicom" max-width="600px">
+      <v-card>
+        <v-card-title class="headline">Thaicom Details</v-card-title>
+        <v-card-text>
+          <p><strong>Data Ingestion and Storage:</strong> Orchestrated the acquisition, cleaning, and structuring of geospatial data formats, including .tif, .geojson, and .mbtiles. Implemented efficient storage solutions using RDS PostgreSQL (PostGIS) for vector data and S3 or STAC for raster data.</p>
+          <p><strong>AI and Data Model Deployment:</strong> Deployed several critical models, such as disaster models (for droughts and floods) using AWS CloudFormation and CDK for infrastructure management. Managed ETL processes using Glue Jobs and PySpark, handling data preprocessing and postprocessing efficiently.</p>
+          <p><strong>API Gateway Integration:</strong> Engineered custom microservices for data ingestion and model deployment using various AWS services. These solutions were integrated with API Gateway, significantly streamlining data access for various applications and stakeholders.</p>
+          <p><strong>Collaboration and Professional Growth:</strong> Collaborated closely with the modeling team to define input and output data requirements and optimize deployment schedules. Enhanced expertise in AWS technologies and data management, contributing significantly to project success at Thaicom.</p>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" @click="dialogThaicom = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
+    <v-dialog v-model="dialogMango" max-width="600px">
+      <v-card>
+        <v-card-title class="headline">Mango Consultant Details</v-card-title>
+        <v-card-text>
+          <p><strong>Face Recognition System:</strong> Collaborated on a system for worker identification using image processing techniques with CMake and DLIB.</p>
+          <p><strong>RPA System for Marketing:</strong> Designed and developed a Robotic Process Automation system to streamline marketing processes by efficiently retrieving and processing data from a 100,000-record database housed in the DBD Data Warehouse.</p>
+          <p><strong>LINE Developer System Microservices Architecture:</strong> Created a microservice architecture that allows users to request quotations via the LINE Messaging API.</p>
+          <p>Contributed to CRM, face recognition, RPA, and microservices projects, enhancing my proficiency in delivering innovative solutions.</p>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" @click="dialogMango = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </v-container>
 </template>
 
@@ -166,76 +163,61 @@
 export default {
   data() {
     return {
-
-      colors: [
-        'indigo',
-        'warning',
-        'pink darken-2',
-        'red lighten-1',
-        'deep-purple accent-4',
-      ],
+      dialogThaicom: false,
+      dialogMango: false,
       items: [
-        {
-          src: require('~/assets/images/cert2.jpg')
-        },
-        {
-          src: require('~/assets/images/cert3.jpg')
-        },
-        {
-          src: require('~/assets/images/cert4.jpg')
-        },
-        {
-          src: require('~/assets/images/bitec3.jpg')
-        },
-        {
-          src: require('~/assets/images/bitec2.jpg')
-        },
-        {
-          src: require('~/assets/images/port2.jpg')
-        },
-        {
-          src: require('~/assets/images/port1.jpg')
-        },
-        {
-          src: require('~/assets/images/port7.jpg')
-        },
-        {
-          src: require('~/assets/images/new6.png')
-        },
-        {
-          src: require('~/assets/images/port4.jpg')
-        },
-        {
-          src: require('~/assets/images/new7.png')
-        },
-        {
-          src: require('~/assets/images/new8.png')
-        },
-        {
-          src: require('~/assets/images/ocr.png')
-        },
-        {
-          src: require('~/assets/images/flow_chatbot.png')
-        },
-        {
-          src: require('~/assets/images/new3.png')
-        },
-        {
-          src: require('~/assets/images/new1.png')
-        },
-        {
-          src: require('~/assets/images/new5.png')
-        },
+        { src: require('~/assets/images/cert2.jpg') },
+        { src: require('~/assets/images/cert3.jpg') },
+        { src: require('~/assets/images/cert4.jpg') },
+        { src: require('~/assets/images/bitec3.jpg') },
+        { src: require('~/assets/images/bitec2.jpg') },
+        { src: require('~/assets/images/port2.jpg') },
+        { src: require('~/assets/images/port1.jpg') },
+        { src: require('~/assets/images/port7.jpg') },
+        { src: require('~/assets/images/new6.png') },
+        { src: require('~/assets/images/port4.jpg') },
+        { src: require('~/assets/images/new7.png') },
+        { src: require('~/assets/images/new8.png') },
+        { src: require('~/assets/images/ocr.png') },
+        { src: require('~/assets/images/flow_chatbot.png') },
+        { src: require('~/assets/images/new3.png') },
+        { src: require('~/assets/images/new1.png') },
+        { src: require('~/assets/images/new5.png') },
       ],
     }
   },
+  methods: {
+    showMoreThaicom() {
+      this.dialogThaicom = true;
+    },
+    showMoreMango() {
+      this.dialogMango = true;
+    },
+  },
 }
-
 </script>
 
 <style>
 .shadow-title {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.text-brown-dark {
+  color: #906F3F;
+}
+.text-brown-light {
+  color: #493315;
+}
+.text-orange {
+  color: #E56400;
+}
+.text-grey {
+  color: grey;
+}
+.font-roboto-condensed {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.my-12 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 </style>
-

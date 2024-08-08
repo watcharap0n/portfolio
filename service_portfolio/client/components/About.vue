@@ -1,122 +1,67 @@
 <template>
   <v-container>
-    <v-row style="margin-top: 100px; margin-bottom: 100px">
+    <v-row class="my-12">
       <v-col sm="6" cols="12">
         <v-img
-            style="margin-top: 50px"
-            id="image-profile"
-            :src="require(`~/assets/images/about.png`)"
-            max-height="600"
-            class="mx-16"
-        >
-        </v-img>
+          class="mx-16 mt-6"
+          id="image-profile"
+          :src="require(`~/assets/images/about.png`)"
+          max-height="600"
+        ></v-img>
       </v-col>
       <v-col sm="6" cols="12">
-        <h2 style="font-size: 60px; color: #906F3F" class="shadow-title">
+        <h2 class="shadow-title text-6xl text-brown-dark">
           <strong>About Me!</strong>
         </h2>
-        <div>
-          <div style="color: grey; font-family: 'Roboto Condensed', sans-serif;">
-            <p style="color: #E56400">Hello, I'm a FullStack developer & AI Engineer from Bangkok Thailand.</p>
-            <p style="color: #493315">
-              I hold degree of
-              Computer Engineer (IoT) I have always studied and developed myself. by working in both the Backend
-              (Restful
-              API) &
-              Frontend Pattern Design MVC & RPA (Robotic Process Automation) & AI Machine Learning (Scikit Learn).
-            </p>
-            <br>
-          </div>
-          <div style="color: grey">
-            <div style="margin-bottom: 10px; color: #E56400">Tech stack details</div>
-            <small>
-              <strong>Web Development Technologies</strong>
-            </small>
-            <small style="color: #493315">
-              Server-Side Rendering (SSR) & Client-Side Rendering (CSR): Utilization of FastAPI, Flask, and Node.js for
-              backend development. Proficiency in Nuxt.js, Vue.js, and React.js for frontend design and
-              interaction.
-            </small>
-
-            <br>
-            <small>
-              <strong>Infrastructure and Deployment:</strong>
-            </small>
-            <small style="color: #493315">
-              Extensive experience with Amazon Web Services for cloud-based solutions, skilled in managing Windows
-              Server environments using IIS. Proficient in containerization with Docker, along with web serving and
-              reverse proxying with Nginx.
-            </small>
-
-            <br>
-            <small>
-              <strong>Database Management Systems (DBMS):</strong>
-            </small>
-            <small style="color: #493315">
-              Versatile in handling various database systems including MongoDB, Firebase, MySQL, SQLite, and PostgreSQL
-              with PostGIS extension for geographic information systems.
-            </small>
-            <br>
-            <small>
-              <strong>Artificial Intelligence and Machine Learning:</strong>
-            </small>
-            <small style="color: #493315">
-              Competent in AI/ML technologies, using tools like Scikit-learn for machine learning algorithms, OpenCV for
-              computer vision, and leveraging Google Cloud API. Familiar with the use of CMake for cross-platform
-              software management.
-            </small>
-          </div>
+        <div class="text-grey font-roboto-condensed">
+          <p class="text-orange" style="font-size: 1.2rem; font-weight: 600;">Hello! I’m an AI Engineer and Full-Stack Developer based in Bangkok, Thailand</p>
+          <p class="text-brown-light">
+            With a solid background in AWS service integration and a Bachelor’s degree in Computer Engineering from Southeast Asia University, my professional journey has equipped me with robust expertise in both AI engineering and full-stack development.
+          </p>
+          <br>
+          <h3 class="text-orange mb-2">What I Do</h3>
+          <p class="text-brown-light">
+            Currently, I’m focused on expanding my skills in Full Stack Development and DevOps. I am proficient in source control systems like GitHub, GitLab, and Bitbucket, and my technical toolkit includes:
+          </p>
+          <br>
+          <h3 class="text-orange mb-2">Tech Stacks</h3>
+          <small>
+            <strong>SSR/CSR:</strong> FastAPI, Flask, Node.js, Nuxt.js, Next.js
+          </small>
+          <br>
+          <small>
+            <strong>CI/CD:</strong> CodePipeline, GitLab CI, GitHub Actions
+          </small>
+          <br>
+          <small>
+            <strong>DBMS:</strong> MongoDB, SQL, PostgreSQL
+          </small>
+          <br>
+          <small>
+            <strong>Cloud Infrastructure:</strong> AWS (Strong), Google Cloud, Windows Server (IIS)
+          </small>
+          <br>
+          <small>
+            <strong>Skills:</strong> Advanced proficiency in Vim and a typing speed averaging 60 WPM
+          </small>
         </div>
       </v-col>
     </v-row>
   </v-container>
-
 </template>
 
 <script>
 export default {
   data: () => ({
     skills: [
-      {
-        language: 'Python',
-        color: '#FFEB3B',
-        power: 84,
-      },
-      {
-        language: 'Arduino',
-        color: 'teal lighten-3',
-        power: 80,
-      },
-      {
-        language: 'Javascript, (Vue.js)',
-        color: 'amber',
-        power: 80
-      },
-      {
-        language: 'Dart',
-        color: 'primary',
-        power: 45
-      },
-      {
-        language: 'C',
-        color: 'deep-purple lighten-3',
-        power: 65
-      },
-      {
-        language: 'C#',
-        color: 'deep-purple lighten-2',
-        power: 45
-      },
-      {
-        language: 'C++',
-        color: 'deep-purple lighten-1',
-        power: 65
-      },
-      {
-        language: 'JAVA',
-        color: 'red darken-1',
-        power: 60
-      }
+      { language: 'Python', color: '#FFEB3B', power: 84 },
+      { language: 'Arduino', color: 'teal lighten-3', power: 80 },
+      { language: 'Javascript (Vue.js)', color: 'amber', power: 80 },
+      { language: 'Dart', color: 'primary', power: 45 },
+      { language: 'C', color: 'deep-purple lighten-3', power: 65 },
+      { language: 'C#', color: 'deep-purple lighten-2', power: 45 },
+      { language: 'C++', color: 'deep-purple lighten-1', power: 65 },
+      { language: 'Java', color: 'red darken-1', power: 60 }
     ]
   }),
 }
@@ -125,5 +70,27 @@ export default {
 <style>
 .shadow-title {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.text-brown-dark {
+  color: #906F3F;
+}
+.text-brown-light {
+  color: #493315;
+}
+.text-orange {
+  color: #E56400;
+}
+.text-grey {
+  color: grey;
+}
+.font-roboto-condensed {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.my-12 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.mt-6 {
+  margin-top: 50px;
 }
 </style>

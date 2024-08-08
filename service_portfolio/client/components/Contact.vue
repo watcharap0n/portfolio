@@ -77,7 +77,7 @@
         <div> - Prof. Dr. Nut Otanasup Email: nuto@sau.ac.th</div>
         <div>- Asst. Verapong Kanjanakul Tel: 089-893-4146</div>
         <br>
-        <v-card>
+        <v-card disabled>
           <v-container>
             <v-form
                 ref="form"
