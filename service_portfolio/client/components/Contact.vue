@@ -77,67 +77,67 @@
         <div> - Prof. Dr. Nut Otanasup Email: nuto@sau.ac.th</div>
         <div>- Asst. Verapong Kanjanakul Tel: 089-893-4146</div>
         <br>
-        <v-card disabled>
-          <v-container>
-            <v-form
-                ref="form"
-                v-model="valid"
-                lazy-validation
-            >
-              <v-text-field
-                  dense
-                  v-model="name"
-                  :rules="nameRules"
-                  label="Name"
-                  required
-              ></v-text-field>
+<!--        <v-card disabled>-->
+<!--          <v-container>-->
+<!--            <v-form-->
+<!--                ref="form"-->
+<!--                v-model="valid"-->
+<!--                lazy-validation-->
+<!--            >-->
+<!--              <v-text-field-->
+<!--                  dense-->
+<!--                  v-model="name"-->
+<!--                  :rules="nameRules"-->
+<!--                  label="Name"-->
+<!--                  required-->
+<!--              ></v-text-field>-->
 
-              <v-text-field
-                  dense
-                  v-model="company"
-                  :rules="nameRules"
-                  label="Company"
-                  required
-              ></v-text-field>
+<!--              <v-text-field-->
+<!--                  dense-->
+<!--                  v-model="company"-->
+<!--                  :rules="nameRules"-->
+<!--                  label="Company"-->
+<!--                  required-->
+<!--              ></v-text-field>-->
 
-              <v-text-field
-                  dense
-                  v-model="email"
-                  :rules="emailRules"
-                  label="Email"
-                  required
-              ></v-text-field>
+<!--              <v-text-field-->
+<!--                  dense-->
+<!--                  v-model="email"-->
+<!--                  :rules="emailRules"-->
+<!--                  label="Email"-->
+<!--                  required-->
+<!--              ></v-text-field>-->
 
-              <v-text-field
-                  dense
-                  v-model="tel"
-                  :rules="nameRules"
-                  label="Tel"
-                  required
-              ></v-text-field>
+<!--              <v-text-field-->
+<!--                  dense-->
+<!--                  v-model="tel"-->
+<!--                  :rules="nameRules"-->
+<!--                  label="Tel"-->
+<!--                  required-->
+<!--              ></v-text-field>-->
 
-              <v-textarea
-                  dense
-                  name="input-7-1"
-                  label="Additional"
-                  v-model="other"
-              ></v-textarea>
+<!--              <v-textarea-->
+<!--                  dense-->
+<!--                  name="input-7-1"-->
+<!--                  label="Additional"-->
+<!--                  v-model="other"-->
+<!--              ></v-textarea>-->
 
-              <v-spacer></v-spacer>
-              <v-btn
-                  small
-                  :disabled="!valid"
-                  color="primary"
-                  class="mr-4"
-                  :loading="spin"
-                  @click="initSubmit"
-                  disabled
-              >
-                Submit
-              </v-btn>
-            </v-form>
-          </v-container>
-        </v-card>
+<!--              <v-spacer></v-spacer>-->
+<!--              <v-btn-->
+<!--                  small-->
+<!--                  :disabled="!valid"-->
+<!--                  color="primary"-->
+<!--                  class="mr-4"-->
+<!--                  :loading="spin"-->
+<!--                  @click="initSubmit"-->
+<!--                  disabled-->
+<!--              >-->
+<!--                Submit-->
+<!--              </v-btn>-->
+<!--            </v-form>-->
+<!--          </v-container>-->
+<!--        </v-card>-->
 
       </v-col>
     </v-row>

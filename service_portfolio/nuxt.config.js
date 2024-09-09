@@ -1,6 +1,5 @@
 module.exports = {
     universal: true,
-    css: ["@/assets/css/main.css"],
     build: {
         transpile: [
             "vuetify/lib",
@@ -141,6 +140,12 @@ module.exports = {
                 async: true,
                 defer: true,
             },
+            {
+                src: 'https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js'
+            },
+            {
+                src: 'https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js'
+            },
         ],
 
         link: [
@@ -155,16 +160,26 @@ module.exports = {
                 crossorigin: "anonymous",
             },
             {
-                rel: "preconnect",
-                href: "https://fonts.googleapis.com",
+                rel: 'stylesheet',
+                href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css',
+                crossorigin: 'anonymous'
             },
             {
-                rel: "preconnect",
-                href: "https://fonts.gstatic.com",
+                rel: 'preconnect',
+                href: 'https://fonts.googleapis.com'
             },
             {
-                rel: "stylesheet",
-                href: "https://fonts.googleapis.com/css2?family=Prompt:wght@400&display=swap",
+                rel: 'preconnect',
+                href: 'https://fonts.gstatic.com'
+            },
+            {
+                rel: 'stylesheet',
+                href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap'
+            },
+            {
+                rel: 'stylesheet',
+                href: 'https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css',
+                type: 'text/css'
             },
         ],
     },

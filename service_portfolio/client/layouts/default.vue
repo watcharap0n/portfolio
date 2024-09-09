@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="ibm-plex-sans-thai-medium" style="background-color: #f4f4f4;">
     <v-card flat class="overflow-hidden">
       <v-app-bar
           absolute
@@ -62,7 +62,10 @@ export default {
 
 </script>
 
-<style scoped>
-
-
+<style>
+.ibm-plex-sans-thai-medium {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 </style>
