@@ -37,7 +37,8 @@
         <h2 class="text-center">
           <strong class="shadow-title" style="font-size: 26px; color: #906F3F">Honors / Contact Me</strong></h2>
         <br>
-        <strong style="color: #E56400">The development project before the completion has been done IoT Automated Brine Monitoring and
+        <strong style="color: #E56400">The development project before the completion has been done IoT Automated Brine
+          Monitoring and
           Control</strong>
         <br>
         <br>
@@ -77,67 +78,78 @@
         <div> - Prof. Dr. Nut Otanasup Email: nuto@sau.ac.th</div>
         <div>- Asst. Verapong Kanjanakul Tel: 089-893-4146</div>
         <br>
-<!--        <v-card disabled>-->
-<!--          <v-container>-->
-<!--            <v-form-->
-<!--                ref="form"-->
-<!--                v-model="valid"-->
-<!--                lazy-validation-->
-<!--            >-->
-<!--              <v-text-field-->
-<!--                  dense-->
-<!--                  v-model="name"-->
-<!--                  :rules="nameRules"-->
-<!--                  label="Name"-->
-<!--                  required-->
-<!--              ></v-text-field>-->
+        <iframe width="315" height="560"
+                style="border-radius: 10px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);"
+                src="https://www.youtube.com/embed/W64XQ0cTcb8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                autofocus
+        ></iframe>
 
-<!--              <v-text-field-->
-<!--                  dense-->
-<!--                  v-model="company"-->
-<!--                  :rules="nameRules"-->
-<!--                  label="Company"-->
-<!--                  required-->
-<!--              ></v-text-field>-->
 
-<!--              <v-text-field-->
-<!--                  dense-->
-<!--                  v-model="email"-->
-<!--                  :rules="emailRules"-->
-<!--                  label="Email"-->
-<!--                  required-->
-<!--              ></v-text-field>-->
+        <!--        <v-card disabled>-->
+        <!--          <v-container>-->
+        <!--            <v-form-->
+        <!--                ref="form"-->
+        <!--                v-model="valid"-->
+        <!--                lazy-validation-->
+        <!--            >-->
+        <!--              <v-text-field-->
+        <!--                  dense-->
+        <!--                  v-model="name"-->
+        <!--                  :rules="nameRules"-->
+        <!--                  label="Name"-->
+        <!--                  required-->
+        <!--              ></v-text-field>-->
 
-<!--              <v-text-field-->
-<!--                  dense-->
-<!--                  v-model="tel"-->
-<!--                  :rules="nameRules"-->
-<!--                  label="Tel"-->
-<!--                  required-->
-<!--              ></v-text-field>-->
+        <!--              <v-text-field-->
+        <!--                  dense-->
+        <!--                  v-model="company"-->
+        <!--                  :rules="nameRules"-->
+        <!--                  label="Company"-->
+        <!--                  required-->
+        <!--              ></v-text-field>-->
 
-<!--              <v-textarea-->
-<!--                  dense-->
-<!--                  name="input-7-1"-->
-<!--                  label="Additional"-->
-<!--                  v-model="other"-->
-<!--              ></v-textarea>-->
+        <!--              <v-text-field-->
+        <!--                  dense-->
+        <!--                  v-model="email"-->
+        <!--                  :rules="emailRules"-->
+        <!--                  label="Email"-->
+        <!--                  required-->
+        <!--              ></v-text-field>-->
 
-<!--              <v-spacer></v-spacer>-->
-<!--              <v-btn-->
-<!--                  small-->
-<!--                  :disabled="!valid"-->
-<!--                  color="primary"-->
-<!--                  class="mr-4"-->
-<!--                  :loading="spin"-->
-<!--                  @click="initSubmit"-->
-<!--                  disabled-->
-<!--              >-->
-<!--                Submit-->
-<!--              </v-btn>-->
-<!--            </v-form>-->
-<!--          </v-container>-->
-<!--        </v-card>-->
+        <!--              <v-text-field-->
+        <!--                  dense-->
+        <!--                  v-model="tel"-->
+        <!--                  :rules="nameRules"-->
+        <!--                  label="Tel"-->
+        <!--                  required-->
+        <!--              ></v-text-field>-->
+
+        <!--              <v-textarea-->
+        <!--                  dense-->
+        <!--                  name="input-7-1"-->
+        <!--                  label="Additional"-->
+        <!--                  v-model="other"-->
+        <!--              ></v-textarea>-->
+
+        <!--              <v-spacer></v-spacer>-->
+        <!--              <v-btn-->
+        <!--                  small-->
+        <!--                  :disabled="!valid"-->
+        <!--                  color="primary"-->
+        <!--                  class="mr-4"-->
+        <!--                  :loading="spin"-->
+        <!--                  @click="initSubmit"-->
+        <!--                  disabled-->
+        <!--              >-->
+        <!--                Submit-->
+        <!--              </v-btn>-->
+        <!--            </v-form>-->
+        <!--          </v-container>-->
+        <!--        </v-card>-->
 
       </v-col>
     </v-row>
