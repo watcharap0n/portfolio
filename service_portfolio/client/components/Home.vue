@@ -75,7 +75,7 @@ export default {
   },
   methods: {
     downloadResume() {
-      window.open('/resume-2024-08-09.pdf', '_blank')
+      window.open('/resume-2024-10-02.pdf', '_blank')
     },
     viewPortfolio() {
       this.$emit('view-portfolio', 'Portfolio')
