@@ -6,30 +6,35 @@
           <strong class="shadow-title" style="color: #906F3F; font-size: 26px">Training history/Achievements</strong>
         </h2>
 
-        <v-timeline>
-          <v-timeline-item
-              v-for="(year, i) in years"
-              :key="i"
-              :color="year.color"
-              small
-          >
-            <template v-slot:opposite>
+        <v-responsive
+            style="height: 1300px; overflow-y: auto;"
+
+        >
+          <v-timeline>
+            <v-timeline-item
+                v-for="(year, i) in years"
+                :key="i"
+                :color="year.color"
+                small
+            >
+              <template v-slot:opposite>
             <span
                 :class="`headline font-weight-bold ${year.color}--text`"
                 :style="`color: ${year.color};`"
                 v-text="year.year"
             ></span>
-            </template>
-            <div class="py-4">
-              <h6 :class="`font-weight-light mb-4 ${year.color}--text`" v-text="year.topic"
-                  :style="`color: ${year.color};`"
-              >
-              </h6>
-              <div style="color: #493315" v-text="year.desc">
+              </template>
+              <div class="py-4">
+                <h6 :class="`font-weight-light mb-4 ${year.color}--text`" v-text="year.topic"
+                    :style="`color: ${year.color};`"
+                >
+                </h6>
+                <div style="color: #493315" v-text="year.desc">
+                </div>
               </div>
-            </div>
-          </v-timeline-item>
-        </v-timeline>
+            </v-timeline-item>
+          </v-timeline>
+        </v-responsive>
 
 
       </v-col>
@@ -37,9 +42,23 @@
         <h2 class="text-center">
           <strong class="shadow-title" style="font-size: 26px; color: #906F3F">Honors / Contact Me</strong></h2>
         <br>
-        <strong style="color: #E56400">The development project before the completion has been done IoT Automated Brine
-          Monitoring and
-          Control</strong>
+        <strong style="color: #E56400">
+          Honors
+        </strong>
+        <v-row dense>
+          <div data-iframe-width="150" data-iframe-height="270"
+               data-share-badge-id="53bc46a4-7c86-4a98-a099-407e4d6c3f5d"
+               data-share-badge-host="https://www.credly.com"></div>
+          <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+          <div data-iframe-width="150" data-iframe-height="270"
+               data-share-badge-id="7baf4395-2d32-40bd-a558-73aa54ee0a47"
+               data-share-badge-host="https://www.credly.com"></div>
+          <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+          <div data-iframe-width="150" data-iframe-height="270"
+               data-share-badge-id="e4fd6690-0dae-4161-bb1d-0757213d0302"
+               data-share-badge-host="https://www.credly.com"></div>
+          <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        </v-row>
         <br>
         <br>
         <p style="color: #493315">
@@ -190,6 +209,48 @@ export default {
           year: 'March 2020 to March 2020',
           desc: 'SAU English Test Course.'
         },
+        {
+          topic: 'Amazon Web Service (AWS)',
+          color: '#E56400',
+          year: 'April 2023 to April 2023',
+          desc: 'AWS Technical Essentials by Amazon Web Service (AWS).'
+        },
+        {
+          topic: 'Amazon Web Service (AWS)',
+          color: '#E56400',
+          year: 'April 2023 to April 2023',
+          desc: 'Developing on AWS by Amazon Web Service (AWS).'
+        },
+        {
+          topic: 'Amazon Web Service (AWS)',
+          color: '#E56400',
+          year: 'April 2023 to April 2023',
+          desc: 'AWS Cloud Practitioner Essentials Day by Amazon Web Service (AWS).'
+        },
+        {
+          topic: 'BSI Training Academy',
+          color: '#E56400',
+          year: 'April 2023 to April 2023',
+          desc: 'ISO 9001:2015 Quality Management System (QMS) Internal Auditor Training Course.'
+        },
+        {
+          topic: 'Voxy',
+          color: '#E56400',
+          year: 'October 2023 to October 2023',
+          desc: 'Voxy Proficiency Achievement Certificate - Intermediate',
+        },
+        {
+          topic: 'Amazon Web Service (AWS)',
+          color: '#E56400',
+          year: 'November 2024 to November 2024',
+          desc: 'AWS Certified Cloud Practitioner',
+        },
+        {
+          topic: 'Amazon Web Service (AWS)',
+          color: '#E56400',
+          year: 'November 2024 to November 2024',
+          desc: 'AWS Certified AI Practitioner',
+        }
       ],
       spin: false,
       valid: true,
