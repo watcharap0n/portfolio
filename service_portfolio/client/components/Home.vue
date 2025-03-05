@@ -75,7 +75,7 @@ export default {
   },
   methods: {
     downloadResume() {
-      window.open('/resume-2024-10-02.pdf', '_blank')
+      window.open('https://data.watcharapon.dev/resume/resume.pdf', '_blank')
     },
     viewPortfolio() {
       this.$emit('view-portfolio', 'Portfolio')
