@@ -8,7 +8,9 @@
             AI Engineer & Fullstack Developer
           </div>
           <br>
-          <v-btn color="#705125" outlined rounded>
+          <v-btn color="#705125" outlined rounded
+                 @click="viewPortfolio"
+          >
             <v-icon>mdi-pencil</v-icon>
             View Portfolio
           </v-btn>
@@ -78,7 +80,7 @@ export default {
       window.open('https://data.watcharapon.dev/resume/resume.pdf', '_blank')
     },
     viewPortfolio() {
-      this.$emit('view-portfolio', 'Portfolio')
+      window.open('https://data.watcharapon.dev/portfolio/portfolio.pdf', '_blank')
     }
   }
 }
